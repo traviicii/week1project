@@ -32,7 +32,15 @@ once they are merged, then the code gets updated after the commit
 --Travis needs to pull the pull requests to his local computer
     git pull <branch> (branch is origin)
 
-Simon/Hridesh want to get what each other/Travis has updated 
+Travis wants to update local repo:
+    git pull origin main
+
+Simon/Hridesh want to get what each other has put 
     git remote add upstream <travis's-url>
     ( git remote -v ) to check
     git pull upstream <branch> (branch is master / main)
+
+* Make sure Fork is synched!
+    - git fetch upstream & git merge, but github is doing it all for you 
+
+git log - make sure all group members are the same
