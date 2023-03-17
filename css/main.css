@@ -1,0 +1,116 @@
+/* CSS Page */
+
+
+/* all-encompassing container for sign-up-page */
+.sign-up-container {  display: grid;
+    grid-template-columns: 0.2fr 1.3fr 2.1fr 0.4fr;
+    grid-template-rows: 0.9fr 1.5fr 1.7fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". sign-up-container-left . ."
+      ". sign-up-container-left sign-up-image ."
+      ". sign-up-container-left sign-up-image ."
+      ". . . .";
+  }
+  
+  /* container for sign-up left side of page */
+  .sign-up-container-left {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.6fr 1.2fr 1.2fr 1.1fr 0.8fr 0.4fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sign-up-title sign-up-title sign-up-title"
+      "username-input username-input username-input"
+      "email-input email-input email-input"
+      "password-input password-input password-input"
+      "sign-up-button sign-up-button sign-up-button"
+      "sign-up-bottom-text sign-up-bottom-text sign-up-bottom-text"
+      "social-media-container social-media-container social-media-container";
+    grid-area: sign-up-container-left;
+  }
+  
+  /* NOTE: feel free to remove the below styling if you would prefer to just 
+    use Bootstrap to make a "form" and lay it out after creating that. Just 
+    thinking that the following containers could be useful for laying things out
+    as we want. 
+    Honestly it's probably better just to do it that way and then worry about 
+    layout after? But this is here since it was easy enough to do on 
+    gridlayoutit and so we could easily just place stuff in. This method might 
+    work better if we were doing just CSSGrid and not using Bootstrap maybe. */
+
+  /* "Sign Up" */
+  .sign-up-title {
+    justify-self: center;
+    align-self: end;
+    grid-area: sign-up-title;
+  }
+  
+  /* username container */
+  .username-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: username-input;
+  }
+  
+  /* email container */
+  .email-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: email-input;
+  }
+  
+  /* password container */
+  .password-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: password-input;
+  }
+  
+  /* button container */
+  .sign-up-button {
+    justify-self: center;
+    align-self: center;
+    grid-area: sign-up-button;
+  }
+  
+  /* sign-up bottom text container */
+  .sign-up-bottom-text {
+    justify-self: center;
+    align-self: center;
+    grid-area: sign-up-bottom-text;
+  }
+  
+  /* social media container */
+  .social-media-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "facebook-container twitter-container google-container linked-in-container";
+    grid-area: social-media-container;
+  }
+  
+  /* facebook */
+  .facebook-container { grid-area: facebook-container; }
+  
+  /* twitter */
+  .twitter-container { grid-area: twitter-container; }
+  
+  /* google */
+  .google-container { grid-area: google-container; }
+  
+  /* linked in */
+  .linked-in-container { grid-area: linked-in-container; }
+  
+  /* image for sign up */
+  .sign-up-image {
+    justify-self: center;
+    align-self: center;
+    grid-area: sign-up-image;
+  }
+  
