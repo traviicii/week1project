@@ -1,0 +1,38 @@
+FORKING:
+
+-Create fork (on github.com/project-you-want-to-fork)
+- in your terminal, navigate to your folder
+   
+   git clone <url-from-the-fork-not-from-the-original> 
+
+(connection to local machine from fork is then called "origin")
+
+cd into that folder (you could also restart vscode just with that folder just in case)
+open it up into vscode (" code . " )
+*make edits*
+then UPDATING LIFECYCLE to get to commit, regular terminal COMMANDS (use origin)
+
+    1. git add . (. means all, could just upload one file, would put <filename>)
+    2. git commit -m "my message goes here" (first message is usually "first commit")
+    3. git push <remote_name> <branch> (git push origin master/main) * we want to use origin / main
+
+* make sure that you know if you are in "main" or "master" - depends on the person who did the initial commit
+* this gets onto the FORK of github, but not onto the original:
+you need to make a PULL request
+go to uploaded fork on github.com -> open a pull request under tab "pull request"
+- leave detailed comments on what you did and why
+
+** CHECK FOR CONFLICTS **
+
+TRAVIS's COMPUTER:
+on that folder on github, "pull request" comes up
+- click that, then MERGE
+once they are merged, then the code gets updated after the commit
+
+--Travis needs to pull the pull requests to his local computer
+    git pull <branch> (branch is origin)
+
+Simon/Hridesh want to get what each other/Travis has updated 
+    git remote add upstream <travis's-url>
+    ( git remote -v ) to check
+    git pull upstream <branch> (branch is master / main)
