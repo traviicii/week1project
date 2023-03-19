@@ -2,12 +2,14 @@
 body {
   font-family: "Helvetica", sans-serif; 
 }
+html, body { height: 100%; }
+body > #wrapper { height: auto; min-height: 100%; }
 
 .container {  
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 1.7fr 0.3fr 0.45fr 0.62fr 1.9fr 0.4fr 2.3fr 1.1fr;
+    grid-template-rows:0.25fr 1.7fr 0.3fr 0.45fr 0.62fr 1.9fr 0.4fr 2.3fr 1.1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -256,7 +258,7 @@ body {
   
   .b1achat { grid-area: b1achat; }
   
-  .b1b { grid-area: b1b; }
+  .b1b { grid-area: b1b;}
   
   .b1already { grid-area: b1already; }
 
@@ -286,6 +288,7 @@ body {
     grid-area: c;
     margin-left:20%;
     align-items: center;
+    margin-top: -140px;
    }
 
   
@@ -298,20 +301,21 @@ body {
       "dstart"
       "danew";
     grid-area: d;
+    margin-top: -150px;
     
   }
   
   .dstart { grid-area: dstart;
     margin-left: 0px;
     text-align: center;
-    font-weight: ;
+    font-weight: 400;
   }
   
   .danew { 
     grid-area: danew;
     margin-left: 0px;
     text-align: center;
-  
+    margin-top: -140px;
   }
   
   .e {  display: grid;
@@ -323,6 +327,7 @@ body {
       ". epayments eretain ereporting econvert .";
     grid-area: e;
     justify-content: center;
+    margin-top: -190px;
   }
 
   .e button {
@@ -340,27 +345,25 @@ body {
     color: white;
   }
   .epayments button{
-    background-color: rgb(33, 118, 236)
+    background-color: rgb(27, 41, 239);
    }
   
   
-  .eretain { grid-area: eretain; }
+  .eretain { grid-area: eretain;}
 
   .eretain button{
     background-color: white;
     border: 1.1px solid rgb(20, 20, 20);
-    justify-content: flex-end;
-    
   }
   
-  .ereporting { grid-area: ereporting; }
+  .ereporting { grid-area: ereporting;}
 
   .ereporting button{
     background-color: white;
     border: 1.1px solid rgb(20, 20, 20);
   }
   
-  .econvert { grid-area: econvert; }
+  .econvert { grid-area: econvert;}
 
   .econvert button{
     background-color: white;
@@ -368,17 +371,22 @@ body {
   }
   
   .f {  display: grid;
-    grid-template-columns: 0.3fr 1.2fr 2.2fr 0.3fr;
+    grid-template-columns: 0.3fr 0.4fr 1.9fr 0.3fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". f1 f2 .";
     grid-area: f;
+    margin-top: -100px;
+    height: 10px;
   }
   
-  .f1 { grid-area: f1; }
-  
+  .f1 { 
+    grid-area: f1;
+
+}
+
   .f2 {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.7fr 1.2fr 1.1fr;
@@ -390,27 +398,59 @@ body {
       "f2accept"
       "f2learn";
     grid-area: f2;
+    padding:50px;
+    background-color:rgb(27, 41, 239);
+    color: white;
   }
   
-  .f2start { grid-area: f2start; }
+  .f2start { grid-area: f2start;
+    margin-top: 60px;
+  }
+  
+  .f2start h2{
+    font-size: 1.9vw;
+    font-weight: 505;
+
+  }
   
   .f2deliver { grid-area: f2deliver; }
+
+  .f2deliver h5{
+    font-size: 1.2vw;
+    margin-bottom: 30px;
+    margin-top: -15px;
+    font-weight:500;
+  }
   
-  .f2accept { grid-area: f2accept; }
+  
+  .f2accept { grid-area: f2accept;
+    margin-top: -35px; }
+
+  .f2accept li{
+    font-size: 0.8vw;
+    font-weight: 100;
+  }
   
   .f2learn { grid-area: f2learn; }
+
   
-  .gsolutions { grid-area: gsolutions; }
+  .gsolutions { 
+    grid-area: gsolutions;
+    margin-top:-px;
+    font-size: 30px;
+    margin-left:550px;
+ }
   
   .h {  display: grid;
-    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-columns:26.67% 46.67% 26.67%; /*0.8fr 1.4fr 0.8fr;*/
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ".h1";
+      ". h1 .";
     grid-area: h;
-    margin-top: -1500px;
+    margin-top: -2000px;
+    
   }
   
   .h1 {  display: grid;
@@ -422,6 +462,8 @@ body {
       "h1a h1b"
       "h1c h1d";
     grid-area: h1;
+    margin-top: px;
+
   }
   
   .h1a {  display: grid;
@@ -431,19 +473,31 @@ body {
     grid-auto-flow: row;
     grid-template-areas:
       "h1alogo"
-      ".h1email"
-      ".h1aautomate"
-      ".h1alearn";
+      "h1email"
+      "h1aautomate"
+      "h1alearn";
     grid-area: h1a;
   }
   
   .h1alogo { grid-area: h1alogo; }
 
-  .h1email { grid-area: h1email; }
+  .h1alogo img{
+    margin-left: 63px;
+  }
+
+  .h1email { grid-area: h1email;}
+
+  .h1email h4{
+    font-weight: 800;
+    font-size:1.8vw;
+    margin-top: 10px;
+  }
   
   .h1aautomate { grid-area: h1aautomate; }
-  
+
   .h1alearn { grid-area: h1alearn; }
+  
+
   
   .h1b {  display: grid;
     grid-template-columns: 1fr;
@@ -459,8 +513,19 @@ body {
   }
   
   .h1blogo { grid-area: h1blogo; }
+
+  .h1blogo img{
+    margin-left: 63px;
+  }
+
   
-  .h1btask { grid-area: h1btask; }
+  .h1btask { grid-area: h1btask;}
+
+  .h1btask h4{
+    font-weight: 800;
+    font-size:1.8vw;
+    margin-top: 10px;
+  }
   
   .h1bautomate { grid-area: h1bautomate; }
   
@@ -480,8 +545,18 @@ body {
   }
   
   .h1clogo { grid-area: h1clogo; }
-  
+
+  .h1clogo img{
+    margin-left: 63px;
+  }
+
   .h1canalytics { grid-area: h1canalytics; }
+
+  .h1canalytics h4{
+    font-weight: 800;
+    font-size:1.8vw;
+    margin-top: 10px;
+  }
   
   .h1cutomate { grid-area: h1cutomate; }
   
@@ -501,8 +576,18 @@ body {
   }
   
   .h1dlogo { grid-area: h1dlogo; }
+
+  .h1dlogo img{
+    margin-left: 63px;
+  }
   
   .h1dproject { grid-area: h1dproject; }
+
+  .h1dproject h4{
+    font-weight: 800;
+    font-size:1.8vw;
+    margin-top: 10px;
+  }
   
   .h1dtomate { grid-area: h1dtomate; }
   
@@ -516,6 +601,8 @@ body {
     grid-template-areas:
       ". i1 .";
     grid-area: i;
+    margin-top: ;
+    background-color: rgb(0, 57, 250);
   }
   
   .i1 {  display: grid;
@@ -532,9 +619,19 @@ body {
     grid-area: i1;
   }
   
-  .i1try { grid-area: i1try; }
+  .i1try { grid-area: i1try;}
+
+  .i1try h1{
+    color:white;
+    font-size: 2.5vw;
+    margin-top: 5vw;
+  }
   
   .i1lets { grid-area: i1lets; }
+
+  .i1lets h4{
+    color:white;
+  }
   
   .i1a {  display: grid;
     grid-template-columns: 1fr 1fr;
@@ -547,9 +644,13 @@ body {
   }
   
   .i1achat { grid-area: i1achat; }
-  
+
   .i1aget { grid-area: i1aget; }
   
-  .i1free { grid-area: i1free; }
+  .i1free { grid-area: i1free;}
 
-  */
+  .i1free h6{
+    color:white;
+  }
+
+ 
