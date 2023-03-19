@@ -63,16 +63,29 @@ body {
     color:rgb(128, 128, 128);
   }
 
+  .a a:hover {
+    font-size:1.1vw;
+    color:rgb(0, 33, 242);
+    transition: .2s ease-in-out;
+    font-weight:bold;
+  }
+
   .a button {
     font-size: 1vw;
+    font-weight: 600;
     text-align:center;
   }
   
   .alogo { grid-area: alogo; }
 
-  .alogo img {
+  #logo-img {
     height:75%;
     width:75%;
+  }
+
+  .alogo:hover {
+    width:105%;
+    transition: .2s ease-in-out;
   }
   
   .ahome { grid-area: ahome; }
@@ -89,19 +102,48 @@ body {
   
   .asign { grid-area: asign; }
 
-  .asign button {
+  #sign-up-navbar-button {
     padding: .4vw 1.2vw;
     background-color:white;
     color:rgb(33, 84, 212);
     border: 1.7px solid blue;
     font-style:normal;
     border-radius: 8px;
+
   }
+
+  #sign-up-navbar-button:active {
+    padding: .6vw 1.4vw;
+    transition: .2s ease-in-out;
+    }
   
   .atry { grid-area: atry; }
 
-  .atry button {
-    background-color:rgb(13, 68, 208);
+  .white-button {
+    background-color:white;
+    color:rgb(0, 33, 242);
+    border: .2px solid rgb(0, 33, 242);
+  }
+
+  .white-button:hover {
+    background-color:rgb(21, 87, 214);
+    color:white;
+    transition: .17s ease-in-out;
+  }
+
+  .blue-button {
+    background-color:rgb(21, 87, 214);
+    color:white;
+  }
+
+  .blue-button:hover {
+    background-color: white;
+    border: .2px solid rgb(0, 33, 242);
+    color: rgb(34,79,239);
+  }
+
+  #try-it-button {
+    background-color:rgb(21, 87, 214);
     padding-left:3px;
     padding-right:3px;
     padding-top:2px;
@@ -109,21 +151,43 @@ body {
     padding: .4vw .7vw;
     border-radius: 8px;
   }
-  
 
-  .b {  display: grid;
-    grid-template-columns: 0.5fr 2.59fr 0.81fr 0.8fr 0.8fr 0.5fr;
+  #try-it-button:active {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: .2s ease-in-out;
+  }
+
+  #try-it-button:hover {
+    background-color: white;
+    border: .2px solid rgb(0, 33, 242);
+    color: rgb(34,79,239);
+    transition: .17s ease-in-out;
+  }
+  
+  .b {  
+    width:100vw;
+    justify-content:center; /* for dynamic sizing */
+    display: grid;
+    grid-template-columns: 0.9fr 3.7fr 3fr 0.2fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". b1 b2 b2 b2 .";
+      ". b1 b2 .";
     grid-area: b;
   }
   
-  .b1 {  display: grid;
+  .b1 {  
+    width:100%;
+    justify-content:center;
+    align-items:flex-start;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.82fr 1.08fr 0.9fr 0.9fr 0.4fr 0.9fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-rows: 0.5fr 0.4fr 0.4fr 0.9fr 0.4fr 0.4fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -136,13 +200,43 @@ body {
     grid-area: b1;
   }
   
-  .b1focus { grid-area: b1focus; }
+  .b1focus { 
+    grid-area: b1focus;
+  }
+
+  /* focus text */
+  .b1focus h1 {
+    font-size:5.1vw;
+    font-weight: 600;
+    letter-spacing:-.5px;
+    font-stretch:condensed; /* doesn't work */
+    line-height: 7vw;
+    padding-top:1vw;
+  }
   
   .b1let { grid-area: b1let; }
+
+  .b1let h4 {
+    font-size:2.8vw;
+    font-weight:500;
+    padding-top:0;
+  }
   
   .b1subs { grid-area: b1subs; }
+
+  .b1subs {
+    font-size:1vw;
+    padding-right:3vw;
+    font-weight: 700;
+    font-size:1.4vw;
+    color:rgb(153, 153, 153);
+  }
   
-  .b1a {  display: grid;
+  .b1a {  
+    width:47vw;
+    align-self:flex-start;
+    justify-self:center;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -150,55 +244,50 @@ body {
     grid-template-areas:
       "b1asign b1achat .";
     grid-area: b1a;
+    justify-items: center;
   }
   
   .b1asign { grid-area: b1asign; }
+
+  .b1a button {
+    font-size:1.4vw;
+    font-weight:600;
+  }
   
   .b1achat { grid-area: b1achat; }
   
   .b1b { grid-area: b1b; }
   
   .b1already { grid-area: b1already; }
-  
-  .b2 {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-columns! 1fr 1fr 1fr!
-    grid-template-rows! 1fr 1fr 1fr!
-    gap: 0px 0px;
-    grid-auto-flow! row;
-    grid-templete-areas: "b2";
-    grid-template-areas!
-      "b2clientdash b2employee b2clientcal"
-      "b2analytics b2projectcom b2projectfol"
-      "b2time b2email b2projalerts";
-    grid-area: b2;
+
+  .b1already h3 {
+    font-size:2vw;
+    color:rgb(91, 90, 90);
+    font-weight:500;
+  }
+
+  .b1already a {
+    text-decoration: none;
+    color:rgb(91, 90, 90);
   }
   
+  .b2 {  
+    grid-area: b2;
+    justify-self:center;
+    align-self:flex-start;
+  }
 
-  .b2clientdash { grid-area: b2clientdash; }
-  
-  .b2employee { grid-area: b2employee; }
-  
-  .b2clientcal { grid-area: b2clientcal; }
-  
-  .b2analytics { grid-area: b2analytics; }
-  
-  .b2projectcom { grid-area: b2projectcom; }
-  
-  .b2projectfol { grid-area: b2projectfol; }
-  
-  .b2time { grid-area: b2time; }
-  
-  .b2email { grid-area: b2email; }
-  
-  .b2projalerts { grid-area: b2projalerts; }
+  .b2 img {
+    height:90%;
+    width:90%;
+  }
   
   .c { 
     grid-area: c;
     margin-left:20%;
     align-items: center;
    }
+
   
   .d {  display: grid;
     grid-template-columns: 1fr;
@@ -462,3 +551,5 @@ body {
   .i1aget { grid-area: i1aget; }
   
   .i1free { grid-area: i1free; }
+
+  */

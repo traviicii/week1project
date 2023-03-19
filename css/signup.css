@@ -1,22 +1,15 @@
 body {
     font-family: ;
 }
+@media only screen and (max-width: 900px) {
+    .form-control: width: 500%;
+}
 
 .form-control {
     border-radius: 30px;
-    width: 200%;
+    width: 30vw;
     
 }
-
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 
 .sign-up-image {
     display: flex;
@@ -45,8 +38,7 @@ body {
     padding-right: 51.5px;
     padding-top: 11.5px;
     padding-bottom: 11.5px;
-    transition: .2s ease-in-out;
-    
+    transition: .2s ease-in-out; 
 }
 
 #signup_button:hover {
@@ -61,9 +53,10 @@ body {
 }
 
 .fa {
-    padding: 50px;
+    padding: 10px;
+    padding-left: 10px;
     font-size: 30px;
-    width: 50px;
+    width: 55px;
     text-align: center;
     text-decoration: none;
     border: 1px solid rgb(168,168,168);
@@ -71,7 +64,35 @@ body {
     color: black;
   }
 
-.social-media-container {
-    display: flex;
-    justify-content: space-between;
+.facebk:hover {
+    color: white;
+    background-color: rgb(23,93,238);
+    transition: .2s;
+    opacity: 35%;
+}
+
+.twtter:hover {
+    color: white;
+    background-color: rgb(107,170,232);
+    transition: .2s;
+    opacity: 35%;
+}
+.googl:hover {
+    color: white;
+    background-color: rgb(226,44,41);
+    transition: .2s;
+    opacity: 35%;
+    color: black;
+}
+.linkdin:hover {
+    color: white;
+    background-color: rgb(15,79,181);
+    transition: .2s;
+    opacity: 35%;
+}
+
+
+.social-media-container a {
+    font-size: 35px;
+    margin-right: 45px;
 }

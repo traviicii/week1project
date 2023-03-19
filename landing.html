@@ -14,28 +14,34 @@
 <body>
     <div class="container">
         <div class="a">
-            <div class="alogo"><img src="assets/CRM-How-it-works/Logo-1@2x.png" width="130" height="40"></div>
-            <div class="ahome"><a href ="#">Home</a></div>
+            <div class="alogo"><img src="assets/CRM-How-it-works/Logo-1@2x.png" width="130" height="40" onclick="window.location.href='landing.html';" id="logo-img"></div>
+            <div class="ahome"><a href ="landing.html">Home</a></div>
             <div class="features"><a href ="#">Features</a></div>
             <div class="apricing"><a href ="#">Pricing</a></div>
             <div class="ahow"><a href ="#">How it Works</a></div>
             <div class="asupport"><a href ="#">Support</a></div>
-            <div class="asign"><button type="button" class="btn btn-primary">Sign In</button></div>
-            <div class="atry"><button type="button" class="btn btn-primary">Try It Free</button></div>
-        </div>
+
+            <div class="asign"><button type="button" onclick="window.location.href='sign-in.html';" class="btn btn-primary white-button" id="sign-up-navbar-button">Sign In</button></div>
+            <div class="atry"><button type="button" onclick="window.location.href='sign-up.html';" class="btn btn-primary blue-button" id="try-it-button">Try It Free</button></div>
+          </div>
 
           <div class="b">
             <div class="b1">
               <div class="b1focus"><h1>Focus on <br>Your Business</h1></div>
               <div class="b1let"><h4>Let Us Handle Everything Else </h4></div>
-              <div class="b1subs"><p>Subscription Billing, powred with revenue retention tools and a seamless customer expereince - without the technical hurdles. </p></div>
+              <div class="b1subs"><p>Subscription Billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles. </p></div>
               <div class="b1a">
-                <div class="b1asign"><button>Sign Up Free >></button></div>
-                <div class="b1achat"><button>Chat With Us</button></div>
+                <div class="b1asign"><button class="btn btn-primary blue-button" onclick="window.location.href='sign-up.html';" id="sign-up-free-btn">Sign Up Free >></button></div>
+                <div class="b1achat"><button class="btn btn-primary white-button">Chat With Us</button></div>
               </div>
-              <div class="b1b"></div>
-              <div class="b1already"></div>
+              <div class="b1already"><h3>Already using <strong>Double</strong>Tap? <a href="sign-in.html"><strong>Sign In</strong></a></h3></div>
+              <div class="b1b">
+                <div class="b1bulletedlist">
+                  <!--could make a UL and change item to image and bullet to circle OR just images for all? -->>
+                </div>
+              </div>
             </div>
+
             <div class="b2"><img src="assets/CRM-How-it-works/Header-Side-1@2x.png" height="500" width="600"></div>
           </div>
 
