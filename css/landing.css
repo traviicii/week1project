@@ -1,9 +1,19 @@
-.container {  display: grid;
+/* body */
+body {
+  font-family: "Helvetica", sans-serif; 
+}
+
+.container {  
+    width: 100vw;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.26fr 2.5fr 0.34fr 0.73fr 0.68fr 2.59fr 0.43fr 2.45fr 1.38fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
+
+    justify-content:center;
+
     grid-auto-flow: row;
     grid-template-areas:
       "a"
@@ -17,17 +27,53 @@
       "i";
   }
   
-  .a {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  .a {  
+    width:100vw;
+
+    display: grid;
+    /*grid-template-columns: .8fr 1.9fr 1.2fr 1.4fr 1fr 1.6fr 1.1fr 1fr 1fr 1.2fr .9fr;*/
+    /*grid-template-columns: auto 14.5% 9% 10.5% 7.5% 12% 8% 8% 8% 9% auto;*/
+    grid-template-columns: minmax(0, 1fr) 14.5% 9% 10.5% 7.5% 12% 8% 8% 8% 9% minmax(0, 1fr);
+
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". alogo ahome features apricing ahow asupport . asign atry .";
     grid-area: a;
+
+    height: 5vw;
+    margin-top:.5vw;
+    
+  }
+
+  /* All link containers in navbar*/
+  .a div {
+    align-self:center;
+    justify-self:center;
+  }
+
+  /* Links in navbar */
+  .a a {
+    text-decoration: none; /* no underline in links */
+    font-size:1vw;
+  }
+
+  .a a:visited {
+    color:rgb(128, 128, 128);
+  }
+
+  .a button {
+    font-size: 1vw;
+    text-align:center;
   }
   
   .alogo { grid-area: alogo; }
+
+  .alogo img {
+    height:75%;
+    width:75%;
+  }
   
   .ahome { grid-area: ahome; }
   
@@ -35,14 +81,34 @@
   
   .apricing { grid-area: apricing; }
   
-  .ahow { grid-area: ahow; }
+  .ahow { 
+    grid-area: ahow;
+  }
   
   .asupport { grid-area: asupport; }
   
   .asign { grid-area: asign; }
+
+  .asign button {
+    padding: .4vw 1.2vw;
+    background-color:white;
+    color:rgb(33, 84, 212);
+    border: .2px solid blue;
+    font-style:normal;
+  }
   
   .atry { grid-area: atry; }
+
+  .atry button {
+    background-color:rgb(13, 68, 208);
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:2px;
+    padding-bottom:1px;
+    padding: .4vw .7vw;
+  }
   
+
   .b {  display: grid;
     grid-template-columns: 0.5fr 2.59fr 0.81fr 0.8fr 0.8fr 0.5fr;
     grid-template-rows: 1fr;
@@ -338,4 +404,3 @@
   .i1aget { grid-area: i1aget; }
   
   .i1free { grid-area: i1free; }
-  
