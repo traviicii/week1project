@@ -1,0 +1,341 @@
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.26fr 2.5fr 0.34fr 0.73fr 0.68fr 2.59fr 0.43fr 2.45fr 1.38fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "gsolutions"
+      "h"
+      "i";
+  }
+  
+  .a {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". alogo ahome features apricing ahow asupport . asign atry .";
+    grid-area: a;
+  }
+  
+  .alogo { grid-area: alogo; }
+  
+  .ahome { grid-area: ahome; }
+  
+  .features { grid-area: features; }
+  
+  .apricing { grid-area: apricing; }
+  
+  .ahow { grid-area: ahow; }
+  
+  .asupport { grid-area: asupport; }
+  
+  .asign { grid-area: asign; }
+  
+  .atry { grid-area: atry; }
+  
+  .b {  display: grid;
+    grid-template-columns: 0.5fr 2.59fr 0.81fr 0.8fr 0.8fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". b1 b2 b2 b2 .";
+    grid-area: b;
+  }
+  
+  .b1 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.82fr 1.08fr 0.9fr 0.9fr 0.4fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "b1focus"
+      "b1let"
+      "b1subs"
+      "b1a"
+      "b1already"
+      "b1b";
+    grid-area: b1;
+  }
+  
+  .b1focus { grid-area: b1focus; }
+  
+  .b1let { grid-area: b1let; }
+  
+  .b1subs { grid-area: b1subs; }
+  
+  .b1a {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "b1asign b1achat .";
+    grid-area: b1a;
+  }
+  
+  .b1asign { grid-area: b1asign; }
+  
+  .b1achat { grid-area: b1achat; }
+  
+  .b1b { grid-area: b1b; }
+  
+  .b1already { grid-area: b1already; }
+  
+  .b2 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns! 1fr 1fr 1fr!
+    grid-template-rows! 1fr 1fr 1fr!
+    gap: 0px 0px;
+    grid-auto-flow! row;
+    grid-templete-areas: "b2";
+    grid-template-areas!
+      "b2clientdash b2employee b2clientcal"
+      "b2analytics b2projectcom b2projectfol"
+      "b2time b2email b2projalerts";
+    grid-area: b2;
+  }
+  
+
+  .b2clientdash { grid-area: b2clientdash; }
+  
+  .b2employee { grid-area: b2employee; }
+  
+  .b2clientcal { grid-area: b2clientcal; }
+  
+  .b2analytics { grid-area: b2analytics; }
+  
+  .b2projectcom { grid-area: b2projectcom; }
+  
+  .b2projectfol { grid-area: b2projectfol; }
+  
+  .b2time { grid-area: b2time; }
+  
+  .b2email { grid-area: b2email; }
+  
+  .b2projalerts { grid-area: b2projalerts; }
+  
+  .c { grid-area: c; }
+  
+  .d {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.94fr 1.06fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "dstart"
+      "danew";
+    grid-area: d;
+  }
+  
+  .dstart { grid-area: dstart; }
+  
+  .danew { grid-area: danew; }
+  
+  .e {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". epayments eretain ereporting econvert .";
+    grid-area: e;
+  }
+  
+  .epayments { grid-area: epayments; }
+  
+  .eretain { grid-area: eretain; }
+  
+  .ereporting { grid-area: ereporting; }
+  
+  .econvert { grid-area: econvert; }
+  
+  .f {  display: grid;
+    grid-template-columns: 0.3fr 1.2fr 2.2fr 0.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". f1 f2 .";
+    grid-area: f;
+  }
+  
+  .f1 { grid-area: f1; }
+  
+  .f2 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.7fr 1.2fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "f2start"
+      "f2deliver"
+      "f2accept"
+      "f2learn";
+    grid-area: f2;
+  }
+  
+  .f2start { grid-area: f2start; }
+  
+  .f2deliver { grid-area: f2deliver; }
+  
+  .f2accept { grid-area: f2accept; }
+  
+  .f2learn { grid-area: f2learn; }
+  
+  .gsolutions { grid-area: gsolutions; }
+  
+  .h {  display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". h1 .";
+    grid-area: h;
+  }
+  
+  .h1 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "h1a h1b"
+      "h1c h1d";
+    grid-area: h1;
+  }
+  
+  .h1a {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1.2fr 0.2fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "h1alogo"
+      "."
+      "."
+      ".";
+    grid-area: h1a;
+  }
+  
+  .h1alogo { grid-area: h1alogo; }
+  
+  .h1b {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "h1blogo"
+      "h1btask"
+      "h1bautomate"
+      "h1blearn";
+    grid-area: h1b;
+  }
+  
+  .h1blogo { grid-area: h1blogo; }
+  
+  .h1btask { grid-area: h1btask; }
+  
+  .h1bautomate { grid-area: h1bautomate; }
+  
+  .h1blearn { grid-area: h1blearn; }
+  
+  .h1c {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "h1clogo"
+      "h1canalytics"
+      "h1cutomate"
+      "h1clearn";
+    grid-area: h1c;
+  }
+  
+  .h1clogo { grid-area: h1clogo; }
+  
+  .h1canalytics { grid-area: h1canalytics; }
+  
+  .h1cutomate { grid-area: h1cutomate; }
+  
+  .h1clearn { grid-area: h1clearn; }
+  
+  .h1d {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "h1dlogo"
+      "h1dproject"
+      "h1dtomate"
+      "h1dlearn";
+    grid-area: h1d;
+  }
+  
+  .h1dlogo { grid-area: h1dlogo; }
+  
+  .h1dproject { grid-area: h1dproject; }
+  
+  .h1dtomate { grid-area: h1dtomate; }
+  
+  .h1dlearn { grid-area: h1dlearn; }
+  
+  .i {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". i1 .";
+    grid-area: i;
+  }
+  
+  .i1 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "i1try"
+      "i1lets"
+      "i1a"
+      "i1free"
+      ".";
+    grid-area: i1;
+  }
+  
+  .i1try { grid-area: i1try; }
+  
+  .i1lets { grid-area: i1lets; }
+  
+  .i1a {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "i1aget i1achat";
+    grid-area: i1a;
+  }
+  
+  .i1achat { grid-area: i1achat; }
+  
+  .i1aget { grid-area: i1aget; }
+  
+  .i1free { grid-area: i1free; }
+  
