@@ -49,21 +49,21 @@
   
   /* username container */
   .username-input {
-    justify-self: center;
+    justify-self: start;
     align-self: center;
     grid-area: username-input;
   }
   
   /* email container */
   .email-input {
-    justify-self: center;
+    justify-self: start;
     align-self: center;
     grid-area: email-input;
   }
   
   /* password container */
   .password-input {
-    justify-self: center;
+    justify-self: start;
     align-self: center;
     grid-area: password-input;
   }

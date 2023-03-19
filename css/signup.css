@@ -1,0 +1,77 @@
+body {
+    font-family: ;
+}
+
+.form-control {
+    border-radius: 30px;
+    width: 200%;
+    
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.sign-up-image {
+    display: flex;
+    justify-content: end;
+}
+
+.sign-up-title h1 {
+    font-weight: bolder;
+}
+
+#signup_button {
+    border-radius: 30px;
+    background-color: rgb(34,79,239);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+#signup_button:active {
+    padding-left: 51.5px;
+    padding-right: 51.5px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    transition: .2s ease-in-out;
+    
+}
+
+#signup_button:hover {
+    background-color: white;
+    color: rgb(34,79,239);
+    transition: .17s ease-in-out;
+}
+
+.sign-up-bottom-text p {
+    font-weight: bolder;
+    font-size: small;
+}
+
+.fa {
+    padding: 50px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(168,168,168);
+    border-radius: 50%;
+    color: black;
+  }
+
+.social-media-container {
+    display: flex;
+    justify-content: space-between;
+}
