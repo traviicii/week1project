@@ -44,3 +44,6 @@ Simon/Hridesh want to get what each other has put
     - git fetch upstream & git merge, but github is doing it all for you 
 
 git log - make sure all group members are the same
+
+=========
+way to update the fork - "sync fork" button on github
