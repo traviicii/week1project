@@ -100,7 +100,7 @@ body {
 }
 /*-----End of Sign Up Form-----*/
 
-@media (max-width: 975px) {
+@media (max-width: 1116px) {
 
     .sign-up-container {  
         display: flex;
@@ -110,10 +110,6 @@ body {
 
     .sign-up-image img {
         display: none;
-    }
-
-    .inputicons {
-        
     }
 
     .form-control {

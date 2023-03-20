@@ -27,6 +27,7 @@
       "signin-bottom-text signin-bottom-text signin-bottom-text"
       "social-media-container social-media-container social-media-container";
     grid-area: signin-container-right;
+    z-index: 1;
   }
   
   .sign-in-title {
@@ -140,4 +141,3 @@
     align-self: center;
     grid-area: signup-button;
   }
-  

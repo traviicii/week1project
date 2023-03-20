@@ -1,0 +1,96 @@
+.container {  display: grid;
+    grid-template-columns: .4fr 1fr .4fr;
+    grid-template-rows: .9fr 1.5fr 1.7fr .3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". signin-container-right ."
+      ". signin-container-right ."
+      ". signin-container-right ."
+      ". . .";
+  }
+  
+  .signin-container-right {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.6fr 1.2fr 1.2fr 1.1fr .8fr .4fr .7fr .4fr .8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". sign-in-title ."
+      ". username-input ."
+      ". email-input ."
+      ". password-input ."
+      ". signin-button ."
+      ". signin-bottom-text ."
+      "social-media-container social-media-container social-media-container"
+      ". signup-text2 ."
+      ". signup-button2 .";
+    grid-area: signin-container-right;
+  }
+  
+  .sign-in-title {
+    justify-self: center;
+    align-self: end;
+    grid-area: sign-in-title;
+  }
+  
+  .username-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: username-input;
+  }
+  
+  .email-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: email-input;
+  }
+  
+  .password-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: password-input;
+  }
+  
+  .signin-button {
+    justify-self: center;
+    align-self: center;
+    grid-area: signin-button;
+  }
+  
+  .signin-bottom-text {
+    justify-self: center;
+    align-self: center;
+    grid-area: signin-bottom-text;
+  }
+  
+  .social-media-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "facebook-container twitter-container google-container linkedin-container";
+    grid-area: social-media-container;
+  }
+  
+  .facebook-container { grid-area: facebook-container; }
+  
+  .twitter-container { grid-area: twitter-container; }
+  
+  .google-container { grid-area: google-container; }
+  
+  .linkedin-container { grid-area: linkedin-container; }
+  
+  .signup-text2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: signup-text2;
+  }
+  
+  .signup-button2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: signup-button2;
+  }
+  
