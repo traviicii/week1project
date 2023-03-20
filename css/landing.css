@@ -9,13 +9,10 @@ body > #wrapper { height: auto; min-height: 100%; }
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:0.25fr 1.7fr 0.3fr 0.45fr 0.62fr 1.9fr 0.4fr 2.3fr 1.1fr;
+    grid-template-rows:0.26fr 1.7fr 0.3fr 0.45fr 0.62fr 1.9fr 0.4fr 2.3fr 1.1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
-
-    justify-content:center;
-    
     grid-auto-flow: row;
     grid-template-areas:
       "a"
@@ -391,8 +388,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   .c { 
     grid-area: c;
     margin-left:20%;
-    align-items: center;
-    margin-top: -140px;
+    align-items: center
    }
 
   
@@ -419,7 +415,6 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-area: danew;
     margin-left: 0px;
     text-align: center;
-    margin-top: -140px;
   }
   
   .e {  display: grid;
@@ -431,7 +426,6 @@ body > #wrapper { height: auto; min-height: 100%; }
       ". epayments eretain ereporting econvert .";
     grid-area: e;
     justify-content: center;
-    margin-top: -190px;
   }
 
   .e button {
@@ -452,6 +446,22 @@ body > #wrapper { height: auto; min-height: 100%; }
     background-color: rgb(27, 41, 239);
    }
   
+  .epay{
+    width:50%;
+    border-radius: 40px;
+  }
+   .white-button2 {
+    color:white;
+    background-color:white;
+    color:rgb(33, 33, 37);
+    border: .2px solid rgb(0, 33, 242);
+  }
+
+  .white-button2:hover {
+    background-color:rgb(21, 87, 214);
+    color:white;
+    transition: .17s ease-in-out;
+  }
   
   .eretain { grid-area: eretain;}
 
@@ -470,9 +480,10 @@ body > #wrapper { height: auto; min-height: 100%; }
   .econvert { grid-area: econvert;}
 
   .econvert button{
-    background-color: white;
-    border: 1.1px solid rgb(20, 20, 20);
-  }
+      background-color: white;
+      border: 1.1px solid rgb(20, 20, 20);
+    }
+
   
   .f {  display: grid;
     grid-template-columns: 0.3fr 0.4fr 1.9fr 0.3fr;
@@ -484,6 +495,22 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-area: f;
     margin-top: -100px;
     height: 10px;
+  }
+
+  .btn2{
+    background-color:rgb(13, 81, 239);
+    color:rgb(246, 247, 255);
+    border: 2.5px solid rgb(255, 255, 255);
+    width:35%;
+    height: 30%;
+    border-radius: 10px;
+    
+}
+
+  .btn2:hover {
+    background-color:rgb(111, 184, 230);
+    color:rgb(252, 252, 252);
+    transition: .17s ease-in-out;
   }
   
   .f1 { 
@@ -540,7 +567,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .gsolutions { 
     grid-area: gsolutions;
-    margin-top:-px;
+    margin-top:px;
     font-size: 30px;
     margin-left:550px;
 
@@ -556,10 +583,21 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-template-areas:
       ". h1 .";
     grid-area: h;
-    margin-top: -2000px;
-    height:100%;
-    
   }
+
+  .btn1{
+      background-color:white;
+      color:rgb(12, 14, 27);
+      border: 2.5px solid rgb(21, 24, 44);
+      width:60%;
+      
+  }
+  
+    .btn1:hover {
+      background-color:rgb(13, 15, 19);
+      color:rgb(252, 252, 252);
+      transition: .17s ease-in-out;
+    }
   
   .h1 {  display: grid;
     grid-template-columns: 1fr 1fr;
@@ -590,7 +628,8 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1alogo { grid-area: h1alogo; }
 
   .h1alogo img{
-    margin-left: 63px;
+    justify-content: center;
+    align-items: center;
   }
 
   .h1email { grid-area: h1email;}
@@ -598,7 +637,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1email h4{
     font-weight: 800;
     font-size:1.8vw;
-    margin-top: 10px;
   }
   
   .h1aautomate { grid-area: h1aautomate; }
@@ -623,7 +661,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1blogo { grid-area: h1blogo; }
 
   .h1blogo img{
-    margin-left: 63px;
   }
 
   
@@ -632,12 +669,18 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1btask h4{
     font-weight: 800;
     font-size:1.8vw;
-    margin-top: 10px;
   }
   
   .h1bautomate { grid-area: h1bautomate; }
   
-  .h1blearn { grid-area: h1blearn; }
+  .h1blearn { grid-area: h1blearn;  }
+
+  .h1blearn button{
+    justify-content: center !important;
+    align-items: center !important;
+    align-items: center !important;
+    align-content: center !important;
+  }
   
   .h1c {  display: grid;
     grid-template-columns: 1fr;
@@ -655,7 +698,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1clogo { grid-area: h1clogo; }
 
   .h1clogo img{
-    margin-left: 63px;
   }
 
   .h1canalytics { grid-area: h1canalytics; }
@@ -663,7 +705,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1canalytics h4{
     font-weight: 800;
     font-size:1.8vw;
-    margin-top: 10px;
+
   }
   
   .h1cutomate { grid-area: h1cutomate; }
@@ -686,7 +728,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1dlogo { grid-area: h1dlogo; }
 
   .h1dlogo img{
-    margin-left: 63px;
   }
   
   .h1dproject { grid-area: h1dproject; }
@@ -694,7 +735,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1dproject h4{
     font-weight: 800;
     font-size:1.8vw;
-    margin-top: 10px;
   }
   
   .h1dtomate { grid-area: h1dtomate; }
@@ -709,8 +749,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-template-areas:
       ". i1 .";
     grid-area: i;
-    margin-top: 5px; /* this did not import, i'm sure it's not 5 so don't keep this */
-   /* background-color: rgb(0, 57, 250);
+    background-color: rgb(0, 57, 250);
     height:100%;
   }
   
@@ -731,12 +770,13 @@ body > #wrapper { height: auto; min-height: 100%; }
   .i1try { grid-area: i1try;}
 
   .i1try h1{
+    margin-top: 20%;
+    text-align:center;
     color:white;
     font-size: 2.5vw;
-    margin-top: 5vw;
   }
   
-  .i1lets { grid-area: i1lets; }
+  .i1lets {grid-area: i1lets; margin-top: 5%;}
 
   .i1lets h4{
     color:white;
@@ -748,13 +788,14 @@ body > #wrapper { height: auto; min-height: 100%; }
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "i1aget i1achat";
+      "i1achat i1aget";
     grid-area: i1a;
   }
   
-  .i1achat { grid-area: i1achat; }
+  .i1achat { grid-area: i1achat; margin-left: 60px;}
 
-  .i1aget { grid-area: i1aget; }
+  .i1aget { grid-area: i1aget; margin-left: 100px; }
+
   
   .i1free { grid-area: i1free;}
 
@@ -762,4 +803,15 @@ body > #wrapper { height: auto; min-height: 100%; }
     color:white;
   }
 
- 
+  /*Get started Button*/
+  .end-btn {
+    background-color: #2cd00f;
+    border: none;
+    width: 12vw;
+    height: 2.5vw;
+    font-size: 1.3vw;
+    color: #FFFFFF;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
+  }
