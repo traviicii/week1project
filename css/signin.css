@@ -1,12 +1,6 @@
 body {
     font-family: ;
 }
-@media only screen and (max-width: 900px) {
-    .form-control {
-        width: 500%;
-    }
-}
-
 
 /*-----Sign Up Form-----*/
 .form-control {
