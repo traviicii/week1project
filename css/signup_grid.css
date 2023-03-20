@@ -31,15 +31,6 @@
     grid-area: sign-up-container-left;
   }
   
-  /* NOTE: feel free to remove the below styling if you would prefer to just 
-    use Bootstrap to make a "form" and lay it out after creating that. Just 
-    thinking that the following containers could be useful for laying things out
-    as we want. 
-    Honestly it's probably better just to do it that way and then worry about 
-    layout after? But this is here since it was easy enough to do on 
-    gridlayoutit and so we could easily just place stuff in. This method might 
-    work better if we were doing just CSSGrid and not using Bootstrap maybe. */
-
   /* "Sign Up" */
   .sign-up-title {
     justify-self: center;
@@ -73,6 +64,7 @@
     justify-self: center;
     align-self: center;
     grid-area: sign-up-button;
+    padding-right:40px;
   }
   
   /* sign-up bottom text container */
@@ -80,6 +72,7 @@
     justify-self: center;
     align-self: center;
     grid-area: sign-up-bottom-text;
+    padding-right: 40px;
   }
   
   /* social media container */

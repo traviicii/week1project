@@ -1,0 +1,143 @@
+
+
+.container {  display: grid;
+    grid-template-columns: 2.1fr 1.3fr;
+    grid-template-rows: .9fr 1.5fr 1.7fr .3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "signin-image-container signin-container-right"
+      "signin-image-container signin-container-right"
+      "signin-image-container signin-container-right"
+      "signin-image-container .";
+  }
+  
+  .signin-container-right {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.6fr 1.2fr 1.2fr 1.1fr .8fr .4fr .7fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sign-in-title sign-in-title sign-in-title"
+      "username-input username-input username-input"
+      "email-input email-input email-input"
+      "password-input password-input password-input"
+      "signin-button signin-button signin-button"
+      "signin-bottom-text signin-bottom-text signin-bottom-text"
+      "social-media-container social-media-container social-media-container";
+    grid-area: signin-container-right;
+  }
+  
+  .sign-in-title {
+    justify-self: center;
+    align-self: end;
+    grid-area: sign-in-title;
+  }
+  
+  .username-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: username-input;
+  }
+  
+  .email-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: email-input;
+  }
+  
+  .password-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: password-input;
+  }
+  
+  .signin-button {
+    justify-self: center;
+    align-self: center;
+    grid-area: signin-button;
+    padding-right: 50px;
+  }
+  
+  .signin-bottom-text {
+    justify-self: center;
+    align-self: center;
+    grid-area: signin-bottom-text;
+    padding-right: 50px;
+  }
+  
+  .social-media-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "facebook-container twitter-container google-container linkedin-conatiner";
+    grid-area: social-media-container;
+  }
+  
+  .facebook-container { grid-area: facebook-container; }
+  
+  .twitter-container { grid-area: twitter-container; }
+  
+  .google-container { grid-area: google-container; }
+  
+  .linkedin-conatiner { grid-area: linkedin-conatiner; }
+  
+  .signin-image-container {  display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: signin-image-container;
+  }
+  
+  .signin-image {
+    justify-self: start;
+    align-self: end;
+    padding-bottom: 50px;
+    grid-area: 1 / 1 / 4 / 3;
+  }
+  
+  .signup-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "signup-text signup-text ."
+      "signup-button signup-button ."
+      ". . .";
+    grid-area: 1 / 1 / 2 / 4;
+    }
+  
+  .signup-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+        "haveaccnt"
+        "fixthatnow";
+    justify-self: center;
+    align-self: center;
+    grid-area: signup-text;
+  }
+
+  .haveaccnt {
+    grid-area: haveaccnt;
+  }
+
+  .fixthatnow {
+    grid-area: fixthatnow;
+  }
+  
+  .sign-up-button {
+    justify-self: center;
+    align-self: center;
+    grid-area: signup-button;
+  }
+  

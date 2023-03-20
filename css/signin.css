@@ -7,29 +7,29 @@ body {
     }
 }
 
-.sign-up-image {
-    display: flex;
-    justify-content: end;
-}
-
 
 /*-----Sign Up Form-----*/
 .form-control {
     border-radius: 30px;
-    width: 30vw;
+    width: 25vw;
+}
+
+/*-----Adjusts position od text input boxes-----*/
+.textinput__ {
+    padding-right: 50px;
 }
 
 .inputicons {}
 
-.sign-up-title h1 {
+.sign-in-title h1 {
     font-weight: bolder;
 }
 
-.sign-up-title {
+.sign-in-title {
     margin-right: 13vw;
 }
 
-#signup_button {
+#signin_button {
     border-radius: 30px;
     background-color: rgb(34,79,239);
     color: white;
@@ -42,7 +42,7 @@ body {
     border: 1px solid;
 }
 
-#signup_button:active {
+#signin_button:active {
     padding-left: 51.5px;
     padding-right: 51.5px;
     padding-top: 11.5px;
@@ -50,15 +50,16 @@ body {
     transition: .2s ease-in-out; 
 }
 
-#signup_button:hover {
+#signin_button:hover {
     background-color: white;
     color: rgb(34,79,239);
     transition: .17s ease-in-out;
 }
 
-.sign-up-bottom-text p {
+.signin-bottom-text p {
     font-weight: bolder;
     font-size: small;
+
 }
 
 .social-media-container a {
@@ -103,4 +104,32 @@ body {
     transition: .2s;
     opacity: 35%;
 }
-/*-----End of Sign Up Form-----*/
+/*-----End of Sign In Form-----*/
+
+#signup_button {
+    border-radius: 30px;
+    background-color: rgb(34,79,239);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+#signup_button:active {
+    padding-left: 51.5px;
+    padding-right: 51.5px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    transition: .2s ease-in-out; 
+}
+
+#signup_button:hover {
+    background-color: white;
+    color: rgb(34,79,239);
+    transition: .17s ease-in-out;
+}
