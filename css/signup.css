@@ -99,3 +99,78 @@ body {
     opacity: 35%;
 }
 /*-----End of Sign Up Form-----*/
+
+@media (max-width: 975px) {
+
+    .sign-up-container {  
+        display: flex;
+        justify-content: center;
+        padding-left:5%;
+    }
+
+    .sign-up-image img {
+        display: none;
+    }
+
+    .inputicons {
+        
+    }
+
+    .form-control {
+        width: 175%;
+    }
+
+    /* username container */
+    .username-input {
+        justify-self: start;
+        align-self: center;
+        grid-area: username-input;
+  }
+  
+    /* email container */
+    .email-input {
+        justify-self: start;
+        align-self: center;
+        grid-area: email-input;
+  }
+  
+  /* password container */
+  .password-input {
+    justify-self: start;
+    align-self: center;
+  }
+
+  .sign-up-button {
+    justify-self: center;
+    align-self: center;
+    grid-area: sign-up-button;
+    padding-right:40px;
+    padding-top: 5%;
+  }
+
+    /* sign-up bottom text container */
+    .sign-up-bottom-text {
+        justify-self: center;
+        align-self: center;
+        grid-area: sign-up-bottom-text;
+        padding-right: 40px;
+        padding-top: 5%;
+      }
+
+      .social-media-container a {
+        font-size: 35px;
+        margin-right: 45px;
+    }
+}
+
+@media (max-width: 390px) {
+    .social-media-container a {
+        font-size: 35px;
+        margin-right: 20px;
+       
+    }
+
+    .form-control {
+        width: 135%;
+    }
+}
