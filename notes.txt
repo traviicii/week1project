@@ -47,3 +47,9 @@ git log - make sure all group members are the same
 
 =========
 way to update the fork - "sync fork" button on github
+
+=======
+
+How to get changes to completely rewrite over any changes you've made:
+git fetch origin
+git reset --hard origin

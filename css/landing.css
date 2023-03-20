@@ -7,9 +7,10 @@ body > #wrapper { height: auto; min-height: 100%; }
 
 .container {  
     width: 100vw;
+    height:400vw; /* change this */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:0.26fr 1.7fr 0.3fr 0.45fr 0.62fr 1.9fr 0.4fr 2.3fr 1.1fr;
+    grid-template-rows:0.26fr 1.7fr 0.3fr 0.3fr 1fr 1.9fr 0.4fr 2.3fr 1.1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -308,7 +309,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     height: 3vw;
 
     display: grid;
-    grid-template-columns: 1.5fr .5fr 2fr .5fr 2fr 3fr;
+    grid-template-columns: 1.2fr .5fr 2fr .5fr 2fr 3fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -328,8 +329,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   .free-14-day-trial {
     grid-area: free-14-day-trial;
     width:100%;
-    padding:0;
-    height:100%; /* how do we reduce height of this */
+    padding-right:0;
     align-self:center;
     justify-self:center;
     
@@ -345,8 +345,8 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-self:center;
     margin-left:auto;
     margin-right:auto;
-    height:4px;
-    width: 3px;
+    height:8px;
+    width: 6px;
     background-color:rgb(21, 87, 244);
     border-radius: 50%;
   }
@@ -384,15 +384,24 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding-top:3vw;
   }
   
-/*
+
   .c { 
+    
+    align-self:flex-start;
+    justify-content:center;
+    height:1vw;
     grid-area: c;
-    margin-left:20%;
-    align-items: center
+    align-items: center;
+    padding:0;
    }
 
+  .c hr {
+    margin:auto;
+  }
+
   
-  .d {  display: grid;
+  .d {  
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.94fr 1.06fr;
     gap: 0px 0px;
@@ -401,8 +410,7 @@ body > #wrapper { height: auto; min-height: 100%; }
       "dstart"
       "danew";
     grid-area: d;
-    margin-top: -150px;
-    
+    margin:0;
   }
   
   .dstart { grid-area: dstart;
@@ -410,11 +418,20 @@ body > #wrapper { height: auto; min-height: 100%; }
     text-align: center;
     font-weight: 400;
   }
+
+  .dstart h3 {
+    font-size: 24px;
+  }
   
   .danew { 
     grid-area: danew;
     margin-left: 0px;
     text-align: center;
+  }
+
+  .danew p {
+    font-size: 14px;
+    line-height:16px;
   }
   
   .e {  display: grid;
@@ -430,71 +447,118 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .e button {
     display: inline-block;
-      height:135px;
+      height:125px;
       margin: 23px;
       vertical-align: center;
-      width: 135px;
-      border:65px;
+      width: 115px;
       border-radius: 15px;
+      font-weight: 100;
+      font-size:14px;
    }
+
+  .e-image {
+    
+  }
   
   .epayments { 
     grid-area: epayments;
     color: white;
   }
-  .epayments button{
-    background-color: rgb(27, 41, 239);
-   }
+  #payment-button{
+  }
+
+  #payment-button img {
+    width:50px;
+    border-radius: 50%;
+    margin-top:10px;
+    margin-bottom: 18px;
+  }
+  
+  #payment-button span {
+    margin-top:40px;
+  }
+
+  #retain-button img {
+    width:40px;
+    object-fit: cover;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
+
+  #reporting-button img {
+    width: 45px;
+    padding-bottom:22px;
+    padding-top:10px;
+  }
+
+  #convert-button img {
+    width: 50px;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
   
   .epay{
     width:50%;
-    border-radius: 40px;
   }
-   .white-button2 {
-    color:white;
+  .white-button2 {
     background-color:white;
-    color:rgb(33, 33, 37);
-    border: .2px solid rgb(0, 33, 242);
+    color:rgb(112, 112, 112);
+    border: .5px solid rgb(112, 112, 112);
   }
 
   .white-button2:hover {
     background-color:rgb(21, 87, 214);
     color:white;
+    border: .2px solid rgb(112, 112, 112);
+    transition: .17s ease-in-out;
+  }
+
+  .white-button2:hover img {
+    width:150%;
+    transition: .17s ease-in-out;
+  }
+
+  .blue-button2 {
+    background-color:rgb(24, 87, 244);
+    color:rgb(255, 255, 255);
+    border: .2px solid rgb(112, 112, 112);
+  }
+
+  .blue-button2:hover{
+    background-color:rgb(255, 255, 255);
+    border: .2px solid rgb(112, 112, 112);
+    color:rgb(112, 112, 112);
+    transition: .17s ease-in-out;
+  }
+
+  .blue-button2:hover img{
+    border: 1px solid rgb(112, 112, 112);
     transition: .17s ease-in-out;
   }
   
   .eretain { grid-area: eretain;}
-
-  .eretain button{
-    background-color: white;
-    border: 1.1px solid rgb(20, 20, 20);
-  }
   
   .ereporting { grid-area: ereporting;}
 
-  .ereporting button{
-    background-color: white;
-    border: 1.1px solid rgb(20, 20, 20);
-  }
-  
   .econvert { grid-area: econvert;}
-
-  .econvert button{
-      background-color: white;
-      border: 1.1px solid rgb(20, 20, 20);
-    }
-
   
   .f {  display: grid;
-    grid-template-columns: 0.3fr 0.4fr 1.9fr 0.3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". f1 f2 .";
+      "f1 f2";
     grid-area: f;
-    margin-top: -100px;
-    height: 10px;
+    height: 100%;
+    width:80%;
+    justify-self:center;
+
+    /*curved border*/
+    /*border-radius:75px;
+    border:1px solid black;
+    outline: 1px solid rgb(105, 42, 42);
+    outline-offset: -4px;*/
   }
 
   .btn2{
@@ -515,12 +579,25 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .f1 { 
     grid-area: f1;
+    height:600px; /* or 100% */
 
+    border-radius: 30px 0px 0px 30px;
+    border:.5px solid rgb(113, 113, 113);
+    margin-right:0;
 }
+
+  .f1 img {
+    margin: auto;
+    /* center image */
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   .f2 {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.7fr 1.2fr 1.1fr;
+    grid-template-rows: 1.5fr 0.7fr 1.2fr .1.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -530,17 +607,26 @@ body > #wrapper { height: auto; min-height: 100%; }
       "f2learn";
     grid-area: f2;
     padding:50px;
-    background-color:rgb(27, 41, 239);
+    background-color:rgb(21, 87, 244);
     color: white;
+    height:600px; /* or 100%? */
+    width:100%;
+    
+    border-radius: 0px 30px 30px 0px;
+    border:.5px solid rgb(113, 113, 113);
+    margin-right:0;
   }
   
-  .f2start { grid-area: f2start;
-    margin-top: 60px;
+  .f2start { 
+    grid-area: f2start;
+    margin-top: 50px;
+    margin-bottom: 40px;
   }
+
   
   .f2start h2{
     font-size: 1.9vw;
-    font-weight: 505;
+    font-weight: 500;
 
   }
   
@@ -554,15 +640,43 @@ body > #wrapper { height: auto; min-height: 100%; }
   }
   
   
-  .f2accept { grid-area: f2accept;
-    margin-top: -35px; }
+  .f2accept { 
+    grid-area: f2accept;
+  }
+  .f2accept ul {
+    padding-left:3px;
+  }
 
   .f2accept li{
+    list-style-type: "- ";
     font-size: 0.8vw;
     font-weight: 100;
   }
   
-  .f2learn { grid-area: f2learn; }
+  .f2learn { 
+    grid-area: f2learn;
+    height: 150px;
+ }
+
+ .f2learn button {
+    font-weight: 200;
+    padding:0;
+    width:200px;
+ }
+
+ #learn-more-text {
+    padding-left:30px;
+    padding-right:50px;
+ }
+
+ #f2learnmore {
+    text-align:center;
+ }
+
+ #f2learnmore i {
+  padding-left:20;
+  padding-right:0;
+}
 
   
   .gsolutions { 
@@ -576,7 +690,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   
   .h {  display: grid;
-    grid-template-columns:26.67% 46.67% 26.67%; /*0.8fr 1.4fr 0.8fr;
+    grid-template-columns:26.67% 46.67% 26.67%; /*0.8fr 1.4fr 0.8fr;*/
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -742,20 +856,20 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1dlearn { grid-area: h1dlearn; }
   
   .i {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: .4fr 1fr .4fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". i1 .";
     grid-area: i;
-    background-color: rgb(0, 57, 250);
-    height:100%;
+    background-color: rgb(21, 87, 244);
+    height:400px; /* 100% */
   }
   
   .i1 {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .6fr .4fr .3fr .6fr auto; /* fix this */
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -770,31 +884,56 @@ body > #wrapper { height: auto; min-height: 100%; }
   .i1try { grid-area: i1try;}
 
   .i1try h1{
-    margin-top: 20%;
+    /*margin-top: 20%;*/
+    margin-top: 10%;
     text-align:center;
     color:white;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   
   .i1lets {grid-area: i1lets; margin-top: 5%;}
 
   .i1lets h4{
     color:white;
+    font-size:1.4vw;
+    font-weight:600;
   }
   
   .i1a {  display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 20% 30% 30% 20%;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "i1achat i1aget";
+      ". i1aget i1achat .";
     grid-area: i1a;
+    width:100%;
+    align-items: flex-start;;
+    justify-content:center;
   }
   
-  .i1achat { grid-area: i1achat; margin-left: 60px;}
+  .i1achat { grid-area: i1achat; 
+    justify-content: center;
+    margin-left: 60px;
+  }
 
-  .i1aget { grid-area: i1aget; margin-left: 100px; }
+  #chat-button-bottom {
+    font-size: 10px;
+    font-weight:600;
+  }
+
+  #chat-button-bottom i {
+    padding-right:10px;
+  }
+
+  #chat-button-bottom:hover {
+    border: .5px solid white;
+  }
+
+  .i1aget { 
+    grid-area: i1aget; 
+    justify-content:center;
+  }
 
   
   .i1free { grid-area: i1free;}
@@ -803,15 +942,72 @@ body > #wrapper { height: auto; min-height: 100%; }
     color:white;
   }
 
+  .i1free { grid-area: i1free;
+    /* Fix the sizing */
+    width:50%;
+    justify-self:center;
+    align-self:flex-start;
+    height: 3vw;
+
+    display: grid;
+    grid-template-columns: 1fr .5fr 2fr .5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "free-14-day-trial white-bullet manage-customers white-bullet-2 cancel-anytime";
+    align-items:center;
+    justify-content:center;
+    padding:0;
+
+    grid-area:i1free;
+  }
+
+  .i1freeitem {
+    width:100%;
+  }
+
+  .white-bullet {
+    grid-area: white-bullet;
+    clip-path: ellipse(115px 50px at 50% 40%);
+    width:100%;
+  }
+
+  .white-bullet-img {
+    justify-self:center;
+    margin-left:auto;
+    margin-right:auto;
+    height:8px;
+    width: 6px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+
+  #white-bullet-2 {
+    grid-area: white-bullet-2;
+  }
+
+  .i1freeitem img {
+    height:1.3vw;
+  }
+
   /*Get started Button*/
   .end-btn {
-    background-color: #2cd00f;
+    background-color: rgb(129, 207, 59);
     border: none;
     width: 12vw;
     height: 2.5vw;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     color: #FFFFFF;
     border-radius: 0.5vw;
     font-weight: bold;
     cursor: pointer;
+  }
+
+  .end-btn span {
+    padding-right: 10px;
+  }
+
+  .end-btn i {
+    padding-left:5px;
   }
