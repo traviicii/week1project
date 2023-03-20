@@ -2,15 +2,31 @@
 body {
   font-family: "Helvetica", sans-serif; 
 }
-html, body { height: 100%; }
+html, body { 
+  height: 100%;
+  width:100%;
+}
+
 body > #wrapper { height: auto; min-height: 100%; }
 
-.container {  
+.container-fluid {  
     width: 100vw;
-    height:400vw; /* change this */
+    padding-left:0px;
+    padding-right:0px;
+    padding-bottom:0px;
+
+    overflow:hidden;
+    
+    
+    justify-self:center;
+    justify-content:center;
+
     display: grid;
+    
     grid-template-columns: 1fr;
-    grid-template-rows:0.26fr 1.7fr 0.3fr 0.3fr 1fr 1.9fr 0.4fr 2.3fr 1.1fr;
+    /*grid-template-rows:0.26fr 1.7fr 0.3fr 0.3fr 1fr 700px 100px 2.3fr 1.1fr; /* change values to px? */
+    /*grid-template-rows: 0.26fr 2.5fr 0.34fr 0.73fr 0.68fr 2.59fr 0.43fr 2.45fr 1.38fr;*/
+    grid-template-rows: 2% 22% 3% 6.5% 6% 23% 4% 21.5% 12%;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -28,7 +44,10 @@ body > #wrapper { height: auto; min-height: 100%; }
   }
   
   .a {  
-    width:100vw;
+
+    background-color:red; 
+    width:100%;
+    justify-self:center;
 
     display: grid;
     /*grid-template-columns: .8fr 1.9fr 1.2fr 1.4fr 1fr 1.6fr 1.1fr 1fr 1fr 1.2fr .9fr;*/
@@ -161,8 +180,8 @@ body > #wrapper { height: auto; min-height: 100%; }
   }
   
   .b {  
-    width:100vw;
-    height:30vw;
+    width:100%;
+    height:50%;
     justify-content:center; /* for dynamic sizing */
     align-items:flex-start;
     display: grid;
@@ -173,11 +192,13 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-template-areas:
       ". b1 b2 .";
     grid-area: b;
+
+    background-color:green;
   }
   
   .b1 {  
     width:100%;
-    height:30vw;
+    height:43%;
     justify-content:flex-start;
     align-items:flex-start;
     display: grid;
@@ -386,7 +407,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   
 
   .c { 
-    
     align-self:flex-start;
     justify-content:center;
     height:1vw;
@@ -411,6 +431,12 @@ body > #wrapper { height: auto; min-height: 100%; }
       "danew";
     grid-area: d;
     margin:0;
+    background-color:blueviolet;
+    text-align:center;
+    justify-self:center;
+    justify-content:center;
+
+    height:50%; /*will change once layout is good for sizing*/
   }
   
   .dstart { grid-area: dstart;
@@ -420,7 +446,8 @@ body > #wrapper { height: auto; min-height: 100%; }
   }
 
   .dstart h3 {
-    font-size: 24px;
+    font-size: 2vw;
+    padding: 0 12vw;
   }
   
   .danew { 
@@ -430,30 +457,33 @@ body > #wrapper { height: auto; min-height: 100%; }
   }
 
   .danew p {
-    font-size: 14px;
-    line-height:16px;
+    font-size: 1vw;
+    line-height:1.2vw;
   }
   
   .e {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    gap: 0px 4vw;
     grid-auto-flow: row;
     grid-template-areas:
       ". epayments eretain ereporting econvert .";
     grid-area: e;
     justify-content: center;
+    justify-self:center;
+    background-color:green;
+    margin:auto;
   }
 
   .e button {
     display: inline-block;
-      height:125px;
-      margin: 23px;
+      height:10vw;
+      width: 9.5vw;
+      margin: 4vw;
       vertical-align: center;
-      width: 115px;
-      border-radius: 15px;
+      border-radius: 1vw;
       font-weight: 100;
-      font-size:14px;
+      font-size:1.3vw;
    }
 
   .e-image {
@@ -468,33 +498,33 @@ body > #wrapper { height: auto; min-height: 100%; }
   }
 
   #payment-button img {
-    width:50px;
+    width:4.5vw;
     border-radius: 50%;
-    margin-top:10px;
-    margin-bottom: 18px;
+    margin-top:1vw;
+    margin-bottom: .5vw;
   }
   
   #payment-button span {
-    margin-top:40px;
+    margin-top:4vw;
   }
 
   #retain-button img {
-    width:40px;
+    width:3vw;
     object-fit: cover;
-    padding-bottom:20px;
-    padding-top:20px;
+    padding-bottom:1.5vw; /* FIX ALIGNMENT ON ITEMS*/
+    padding-top:1.5vw;
   }
 
   #reporting-button img {
-    width: 45px;
-    padding-bottom:22px;
-    padding-top:10px;
+    width: 4vw;
+    padding-bottom:1.5vw;
+    padding-top:vw;
   }
 
   #convert-button img {
-    width: 50px;
-    padding-bottom:20px;
-    padding-top:20px;
+    width: 4.5vw;
+    padding-bottom:1.5vw;
+    padding-top:1vw;
   }
   
   .epay{
@@ -542,7 +572,8 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .econvert { grid-area: econvert;}
   
-  .f {  display: grid;
+  .f {  
+    display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -550,10 +581,12 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-template-areas:
       "f1 f2";
     grid-area: f;
-    height: 100%;
+    height: 100%; /* should be 100*/
     width:80%;
     justify-self:center;
 
+    justify-content:center;
+    background-color:fuchsia
     /*curved border*/
     /*border-radius:75px;
     border:1px solid black;
@@ -561,13 +594,14 @@ body > #wrapper { height: auto; min-height: 100%; }
     outline-offset: -4px;*/
   }
 
+  /* learnmore button*/
   .btn2{
     background-color:rgb(13, 81, 239);
     color:rgb(246, 247, 255);
-    border: 2.5px solid rgb(255, 255, 255);
-    width:35%;
-    height: 30%;
-    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    width:3vw;
+    height: 4vw;
+    border-radius: 1vw;
     
 }
 
@@ -579,7 +613,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .f1 { 
     grid-area: f1;
-    height:600px; /* or 100% */
+    height:40%; /* get this smaller, should be 100% when container is rihgt size */
 
     border-radius: 30px 0px 0px 30px;
     border:.5px solid rgb(113, 113, 113);
@@ -589,6 +623,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   .f1 img {
     margin: auto;
     /* center image */
+    height:24vw;
     position:relative;
     top: 50%;
     left: 50%;
@@ -597,7 +632,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .f2 {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.7fr 1.2fr .1.1fr;
+    grid-template-rows: 1.5fr 0.7fr .7fr 1.4fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -606,10 +641,11 @@ body > #wrapper { height: auto; min-height: 100%; }
       "f2accept"
       "f2learn";
     grid-area: f2;
-    padding:50px;
+    padding:4vw;
     background-color:rgb(21, 87, 244);
     color: white;
-    height:600px; /* or 100%? */
+    
+    height:40%; /* get this to 100% */
     width:100%;
     
     border-radius: 0px 30px 30px 0px;
@@ -634,39 +670,43 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .f2deliver h5{
     font-size: 1.2vw;
-    margin-bottom: 30px;
-    margin-top: -15px;
+    margin-bottom: 3vw;
+    margin-top: -2vw;
     font-weight:500;
   }
   
   
   .f2accept { 
     grid-area: f2accept;
+    background-color:red;
+    align-self:center;
   }
   .f2accept ul {
-    padding-left:3px;
+    padding-left:.5vw;
   }
 
   .f2accept li{
     list-style-type: "- ";
     font-size: 0.8vw;
     font-weight: 100;
+    margin:0;
   }
   
   .f2learn { 
     grid-area: f2learn;
-    height: 150px;
+    height: 14vw;
  }
 
  .f2learn button {
     font-weight: 200;
     padding:0;
-    width:200px;
+    width:23vw;
  }
 
  #learn-more-text {
-    padding-left:30px;
-    padding-right:50px;
+    padding-left:2vw;
+    padding-right:3vw;
+    font-size: 1.5vw;
  }
 
  #f2learnmore {
@@ -676,27 +716,55 @@ body > #wrapper { height: auto; min-height: 100%; }
  #f2learnmore i {
   padding-left:20;
   padding-right:0;
+  font-size: 1.5vw;
 }
 
   
   .gsolutions { 
     grid-area: gsolutions;
-    margin-top:px;
-    font-size: 30px;
-    margin-left:550px;
+    font-size: 2.2vw;
+
+    /*align-self:center;
+    justify-self:center;
+    justify-content:center;*/
+
+    align-self: flex-start;
+    text-align:center;
 
     height:100%;
+    width:100%;
+
+    font-weight:600;
+    padding-bottom:0;
+    background-color:blue;
  }
 
   
   .h {  display: grid;
     grid-template-columns:26.67% 46.67% 26.67%; /*0.8fr 1.4fr 0.8fr;*/
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "h1";
+    grid-area: h;
+    width:80%; /* for margins*/
+    
+    justify-self:center;
+    /* 
+    display: grid;
+    grid-template-columns:26.67% 46.67% 26.67%;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". h1 .";
     grid-area: h;
+    width:100%;
+    */
+
   }
 
   .btn1{
@@ -713,17 +781,29 @@ body > #wrapper { height: auto; min-height: 100%; }
       transition: .17s ease-in-out;
     }
   
-  .h1 {  display: grid;
+  .h1 {  
+    background-color:purple;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1px 100px;
+    gap: 1px 20vw; /* */ /* change for more horiz space between items */
     grid-auto-flow: row;
     grid-template-areas:
       "h1a h1b"
       "h1c h1d";
     grid-area: h1;
-    margin-top: px;
+   /* margin-top: 50px;*/
+    width: 100%;
+    
 
+    justify-self:center;
+
+    align-items:flex-start;
+  }
+
+  .h1 div {
+    justify-items: center;
+    
   }
   
   .h1a {  display: grid;
@@ -737,25 +817,67 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1aautomate"
       "h1alearn";
     grid-area: h1a;
-  }
-  
-  .h1alogo { grid-area: h1alogo; }
 
-  .h1alogo img{
+    height:100%;
+    width:100%;
+    background-color:red;
+
+  }
+
+  .h1-logo {
     justify-content: center;
     align-items: center;
+    align-self:center;
+    width: 40%;
+  }
+
+  .h1-logo img{
+    width:100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .h1alogo { grid-area: h1alogo;
+  }
+
+  .h1-heading h4 { /* why doesnt this change any besides*/
+    margin-top: 1vw;
+    font-weight: 800;
+    font-size:2vw;
   }
 
   .h1email { grid-area: h1email;}
 
   .h1email h4{
-    font-weight: 800;
-    font-size:1.8vw;
   }
   
   .h1aautomate { grid-area: h1aautomate; }
 
+  .h1-automate {
+    width:100%;
+  }
+  .h1-automate h6{
+    font-size:15%;
+    padding-left:6vw;
+    padding-right:6vw;
+  }
+
   .h1alearn { grid-area: h1alearn; }
+
+
+  .h1learn-btn {
+    width:40%; 
+    height:40%;
+    justify-items:center;
+  }
+
+  .h1learn-btn button {
+    margin: auto;
+    width:100%;
+    height: 20%;
+    font-size: 15%;
+    border: 0.2px solid black;
+  }
   
 
   
@@ -770,9 +892,14 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1bautomate"
       "h1blearn";
     grid-area: h1b;
+
+    height:100%;
+    width:100%;
   }
   
-  .h1blogo { grid-area: h1blogo; }
+  .h1blogo { 
+    grid-area: h1blogo;
+  }
 
   .h1blogo img{
   }
@@ -781,8 +908,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1btask { grid-area: h1btask;}
 
   .h1btask h4{
-    font-weight: 800;
-    font-size:1.8vw;
   }
   
   .h1bautomate { grid-area: h1bautomate; }
@@ -807,6 +932,9 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1cutomate"
       "h1clearn";
     grid-area: h1c;
+
+    height:100%;
+    width:100%;
   }
   
   .h1clogo { grid-area: h1clogo; }
@@ -817,8 +945,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1canalytics { grid-area: h1canalytics; }
 
   .h1canalytics h4{
-    font-weight: 800;
-    font-size:1.8vw;
 
   }
   
@@ -837,6 +963,9 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1dtomate"
       "h1dlearn";
     grid-area: h1d;
+
+    height:100%;
+    width:100%;
   }
   
   .h1dlogo { grid-area: h1dlogo; }
@@ -847,8 +976,6 @@ body > #wrapper { height: auto; min-height: 100%; }
   .h1dproject { grid-area: h1dproject; }
 
   .h1dproject h4{
-    font-weight: 800;
-    font-size:1.8vw;
   }
   
   .h1dtomate { grid-area: h1dtomate; }
@@ -864,12 +991,15 @@ body > #wrapper { height: auto; min-height: 100%; }
       ". i1 .";
     grid-area: i;
     background-color: rgb(21, 87, 244);
-    height:400px; /* 100% */
+    /*height:400px; /* 100% */
+
+    width:100%;
   }
   
-  .i1 {  display: grid;
+  .i1 {  
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .6fr .4fr .3fr .6fr auto; /* fix this */
+    grid-template-rows: .6fr .4fr .3fr .6fr 1fr; /* fix this */
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -899,7 +1029,24 @@ body > #wrapper { height: auto; min-height: 100%; }
     font-weight:600;
   }
   
-  .i1a {  display: grid;
+  .i1a {  
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "i1aget i1achat";
+    grid-area: i1a;
+    width:60%;
+    align-items: flex-start;;
+    justify-content:center;
+    justify-self:center;
+
+    background-color:red;
+
+    /*
+    display: grid;
     grid-template-columns: 20% 30% 30% 20%;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -910,20 +1057,24 @@ body > #wrapper { height: auto; min-height: 100%; }
     width:100%;
     align-items: flex-start;;
     justify-content:center;
+    */
   }
   
   .i1achat { grid-area: i1achat; 
-    justify-content: center;
-    margin-left: 60px;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    
   }
 
   #chat-button-bottom {
-    font-size: 10px;
+    font-size: 1vw;
     font-weight:600;
+    width: 15vw;
+    height: 2.5vw;
   }
 
   #chat-button-bottom i {
-    padding-right:10px;
+    padding-right:1vw;
   }
 
   #chat-button-bottom:hover {
@@ -967,6 +1118,11 @@ body > #wrapper { height: auto; min-height: 100%; }
     width:100%;
   }
 
+  .i1freeitem free-14-day-trial {
+    /* get these to work */
+    background-color:orange;
+  }
+
   .white-bullet {
     grid-area: white-bullet;
     clip-path: ellipse(115px 50px at 50% 40%);
@@ -995,19 +1151,20 @@ body > #wrapper { height: auto; min-height: 100%; }
   .end-btn {
     background-color: rgb(129, 207, 59);
     border: none;
-    width: 12vw;
+    width: 15vw;
     height: 2.5vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #FFFFFF;
     border-radius: 0.5vw;
     font-weight: bold;
     cursor: pointer;
+    justify-content:center; /* need to center button */
   }
 
   .end-btn span {
-    padding-right: 10px;
+    padding-right: 2vw;
   }
 
   .end-btn i {
-    padding-left:5px;
+    padding-left:1.2vw;
   }
