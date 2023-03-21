@@ -13,15 +13,9 @@ Created shape graphics using CSS,
 
 
 Simon Dutton - 
-Grid layout for Sign Up Page,
-All of a, b sections (nav bar, top section) for landing page,
-Designed some of the buttons & links,
-Fixed the formatting and layout for the landing page for all sections,
-More design elements,
-Drew out images for grid layouts for all pages,
-Did Grid layout for Sign Up Page,
-All of a, b sections (nav bar, top section) for landing page,
-Designed some of the buttons & links,
-Formatting and layout for the landing page for all sections
+Drew out basic images for grid layouts for all pages
+Grid layout for Sign Up Page
+All of a, b sections (nav bar, top section) for landing page
+Fixed the formatting, sizing, and layout for the landing page for all sections
 
 Hridesh Karki - 
