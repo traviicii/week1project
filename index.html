@@ -1,18 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1 Project</title>
-</head>
-<body>
-    We need to put the landing in index.html instead of landing.html because
-    by default the index.html page will open up when you open a webpage.
-    I'm not finding a way to specify that landing is the homepage because the computer
-    will always look for the index file 
+    <title>Week 1 Project Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Helvetica">
+    <script src="https://kit.fontawesome.com/6aab4971c8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
 
-    Saying this here so that I don't forget we need to transfer it all over (once we are done, of course)
-    
-</body>
+      <!--Navbar-->
+      <div class="a">
+        <div class="alogo"><img src="assets/CRM-How-it-works/Logo-1@2x.png" width="130" height="40" onclick="window.location.href='index.html';" id="logo-img"></div>
+        <div class="ahome"><a href ="index.html">Home</a></div>
+        <div class="features"><a href ="#">Features</a></div>
+        <div class="apricing"><a href ="#">Pricing</a></div>
+        <div class="ahow"><a href ="#">How it Works</a></div>
+        <div class="asupport"><a href ="#">Support</a></div>
+        <div class="asign"><button type="button" onclick="window.location.href='sign-in.html';" class="btn btn-primary white-button" id="sign-up-navbar-button">Sign In</button></div>
+        <div class="atry"><button type="button" onclick="window.location.href='sign-up.html';" class="btn btn-primary blue-button" id="try-it-button">Try It Free</button></div>
+      </div>
+      <div class="b">
+        <div class="b1">
+          <div class="b1focus"><h1>Focus on <br>Your Business</h1></div>
+          <div class="b1let"><h4>Let Us Handle Everything Else </h4></div>
+          <div class="b1subs"><p>Subscription Billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles. </p></div>
+          <div class="b1a">
+            <div class="b1asign"><button class="btn btn-primary blue-button" onclick="window.location.href='sign-up.html';" id="sign-up-free-btn"><span>Sign Up Free</span><i class="fa-solid fa-angles-right"></i></button></div>
+            <div class="b1achat"><button class="btn btn-primary white-button" id="chat-button"><i class="fa-solid fa-comment-dots"></i>Chat With Us</button></div>
+
+          </div>
+          <div class="b1already"><h3>Already using <strong>Double</strong>Tap? <a href="sign-in.html"><strong>Sign In</strong></a></h3></div>
+          <div class="b1bulletedlist">
+            <div class="b1bulletitem free-14-day-trial"><img src="assets/CRM-How-it-works/Free 14 day trial@2x.png" width="38px" height="6.5px"></div>
+            <div class="b1bulletitem blue-bullet"><div class="blue-bullet-img"></div></div>
+            <div class="b1bulletitem manage-customers"><img src="assets/CRM-Main/Manage Customers in Minutes@2x.png" width="70px" height="6.5px"></div>
+            <div class="b1bulletitem blue-bullet" id="blue-bullet-2"><div class="blue-bullet-img"></div></div>
+            <div class="b1bulletitem cancel-anytime"><img src="assets/CRM-Main/Cancel at Anytime@2x.png" width="40px" height="6.5px"></div>
+          </div>
+        </div>
+        <div class="b2"><img src="assets/CRM-How-it-works/Header-Side-1@2x.png" height="500" width="600"></div>
+      </div>
+      <div class="c"><hr width="60%"  size="3px" align="center" color="black"></div>
+
+      <div class="d">
+        <div class="dstart"><h3><b>Start to Explore Double Tap</b></h3></div>
+        <div class="danew"><p>A new and better way for small businesses to manage their customer base, payments and <br>keep track of internal tasks.</p></div>
+      </div>
+
+
+          <div class="e">
+            <div class="epayments"><button type="button" class="btn btn-primary blue-button2" id="payment-button"><img class="epay e-image" src="assets/CRM-Main/$cropped.png"><br><span>Payments<span></button></div>
+            <div class="eretain"><button type="button" " class="btn btn-primary white-button2" id="retain-button"><img class="e-image" src="assets/CRM-Main/Page-1@2x.png"><br>Retain</button></div>
+            <div class="ereporting"><button type="button" " class="btn btn-primary white-button2" id="reporting-button"><img class="e-image" src="assets/CRM-Main/layer1.png">Reporting</button></div>
+            <div class="econvert"><button type="button" " class="btn btn-primary white-button2" id="convert-button"><img class="e-image" src="assets/CRM-Main/upanddown opposite sidebyside updown directions two arrows.png">Convert</button></a></div>
+          </div>
+
+          <div class="f">
+              <div class="f1"><img src="assets/CRM-Main/f.png" height="500"></button></div>
+              <div class="f2">
+              <div class="f2start"><h2>Start accepting payments With Ease</h2></div>
+              <div class="f2deliver"><h5>Deliver the world of payment options and seamless checkout<br> experiences, making it easy for your customers to pay you for your<br> products  and services.</h5></div>
+              <div class="f2accept"><p>
+                  <ul>
+                      <li>Accept credit & debit cards, Paypal, ACH,  Apple pay and more with the flick<br> of a switch</li><br>
+                      <li>Process transactions in up to 32 different currencies.</li><br>
+                      <li>Integrate with popular payment gateaways like Strip, and Braintree</li><br>
+                      <li>Select from a variety of different checkout options and experiences</li><br>
+                  </ul>
+              </p></div>
+              <div class="f2learn"><button type="button" class="btn btn2 blue-button" id="f2learnmore"><b id="learn-more-text">Learn More</b><i class="fa-solid fa-chevron-right"></i></button></div>
+              </div>
+            </div>
+ 
+
+          <div class="gsolutions">
+            Solutions to fit your Business Needs
+          </div>
+
+        <div class="h">
+          <div class="h1">
+            <div class="h1a">
+              <div class="h1alogo h1-logo"><img src="assets/CRM-Main/h1a.png" height="50%"></div>
+              <div class="h1email h1-heading"><h4 align="center">Email Dashboards</h4></div>
+              <div class="h1aautomate h1-automate"><h6 align="center">Automate client responses, and keep track of any communication your team has with client.</h6></div>
+              <div class="h1alearn h1learn-btn"><button class="btn btn1 white-button"><b>Learn More<i class="fa-solid fa-chevron-right"></i></b></button></div>
+            </div>
+            <div class="h1b">
+              <div class="h1blogo h1-logo"><img src="assets/CRM-Main/h1b.png" height="50%" align="center"></div>
+              <div class="h1btask h1-heading"><h4 align="center">Task Management</h4></div>
+              <div class="h1bautomate h1-automate"><h6 align="center">Automate client responses, and keep track of any communication your team has with client.</h6></div>
+              <div class="h1blearn h1learn-btn"><button class="btn btn1 white-button"><b>Learn More<i class="fa-solid fa-chevron-right"></i></b></button></div>
+            </div>
+            <div class="h1c">
+              <div class="h1clogo h1-logo"><img src="assets/CRM-Main/h1c.png" height="50%" align="center"></div>
+              <div class="h1canalytics h1-heading"><h4 align="center">Analytics</h4></div>
+              <div class="h1cautomate h1-automate"><h6 align="center">Automate client responses, and keep track of any communication your team has with client.</h6></div>
+              <div class="h1clearn h1learn-btn"><button class="btn btn1 white-button"><b>Learn More<i class="fa-solid fa-chevron-right"></i></b></button></div>
+            </div>
+            <div class="h1d">
+              <div class="h1dlogo h1-logo"><img src="assets/CRM-Main/h1d.png" height="50%" align="center"></div>
+              <div class="h1dproject h1-heading"><h4 align="center">Project Calendars</h4></div>
+              <div class="h1dautomate h1-automate"><h6 align="center">Automate client responses, and keep track of any communication your team has with client.</h6></div>
+              <div class="h1dlearn h1learn-btn"><button class="btn btn1 white-button"><b>Learn More<i class="fa-solid fa-chevron-right"></i></b></button></div>
+            </div>
+          </div>
+        </div>
+
+          <div class="i">
+            <div class="i1">
+              <div class="i1try"><h1 align="center"><b>Try Double Tap Today!</b></h1></div>
+              <div class="i1lets"><h4 align="center">Let's Get Started</h4></div>
+              <div class="i1a">
+                <div class="i1aget"><button class="btn end-btn btn-success" onclick="window.location.href='sign-up.html';"><span>Get Started</span><i class="fa-solid fa-angles-right"></i></button></div>
+                <div class="i1achat"><button class="btn btn-primary white-button" id="chat-button-bottom"><i class="fa-solid fa-comment-dots"></i>Chat With Us</button></div>
+              </div>
+              <div class="i1free">
+                <div class="i1freeitem free-14-day-trial"><img src="assets/CRM-How-it-works/Free -1@2x.png" width="70px" height="6.5px"></div>
+                <div class="i1freeitem white-bullet"><div class="white-bullet-img"></div></div>
+                <div class="i1freeitem manage-customers"><img src="assets/CRM-Main/Manage Customers in Minutes-1@2x.png" width="130px" height="6.5px"></div>
+                <div class="i1freeitem white-bullet" id="white-bullet-2"><div class="white-bullet-img"></div></div>
+                <div class="i1freeitem cancel-anytime"><img src="assets/CRM-Main/Cancel at Anytime-1@2x.png" width="80px" height="6.5px"></div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
