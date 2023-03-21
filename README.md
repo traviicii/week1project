@@ -19,3 +19,9 @@ All of a, b sections (nav bar, top section) for landing page
 Fixed the formatting, sizing, and layout for the landing page for all sections
 
 Hridesh Karki - 
+Drew initial layout for landing page and how it works page
+Worked on c,d,e,f,g,h section with Simon's help on landing page
+Worked on c,d,e,f,f,h section on How it works page
+
+
+
