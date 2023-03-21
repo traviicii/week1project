@@ -9,9 +9,10 @@ html, body {
 
 body > #wrapper { height: auto; min-height: 100%; }
 
+/* container */
 .container-fluid {  
     width: 100vw;
-    height:224.7vw;
+    height:224.7vw; /* based on image dimensions of landing.png*/
     padding-left:0px;
     padding-right:0px;
     padding-bottom:0px;
@@ -25,9 +26,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     display: grid;
     
     grid-template-columns: 1fr;
-    /*grid-template-rows:0.26fr 1.7fr 0.3fr 0.3fr 1fr 700px 100px 2.3fr 1.1fr; /* change values to px? */
-    /*grid-template-rows: 0.26fr 2.5fr 0.34fr 0.73fr 0.68fr 2.59fr 0.43fr 2.45fr 1.38fr;*/
-    grid-template-rows: 2% 22.5% 1% 5% 8% 21% 3% 25.5% 12%;
+    grid-template-rows: 2% 22.5% 1% 5% 8% 21% 3% 25.5% 12%; /* based on grid layout */
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -44,24 +43,18 @@ body > #wrapper { height: auto; min-height: 100%; }
       "i";
       
   }
-  
+  /* Navbar container */
   .a {  
-
-    width:100%;
     justify-self:center;
-
     display: grid;
-    /*grid-template-columns: .8fr 1.9fr 1.2fr 1.4fr 1fr 1.6fr 1.1fr 1fr 1fr 1.2fr .9fr;*/
-    /*grid-template-columns: auto 14.5% 9% 10.5% 7.5% 12% 8% 8% 8% 9% auto;*/
     grid-template-columns: minmax(0, 1fr) 14.5% 9% 10.5% 7.5% 12% 8% 8% 8% 9% minmax(0, 1fr);
-
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". alogo ahome features apricing ahow asupport . asign atry .";
     grid-area: a;
-
+    width:100%;
     height: 5vw;
     margin-top:.5vw;
     
@@ -79,10 +72,12 @@ body > #wrapper { height: auto; min-height: 100%; }
     font-size:1vw;
   }
 
+  /* Links in navbar when visited */
   .a a:visited {
     color:rgb(128, 128, 128);
   }
 
+  /* Links in navbar after hover */
   .a a:hover {
     font-size:1.1vw;
     color:rgb(0, 33, 242);
@@ -90,6 +85,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     font-weight:bold;
   }
 
+  /* buttons in nav bar */
   .a button {
     font-size: 1vw;
     font-weight: 600;
@@ -97,38 +93,42 @@ body > #wrapper { height: auto; min-height: 100%; }
     
   }
   
+  /* logo container */
   .alogo { grid-area: alogo; }
 
+  /* logo image */
   #logo-img {
     height:75%;
     width:75%;
   }
 
+  /* logo image gets bigger when you hover over it */
   .alogo:hover {
     width:105%;
     transition: .2s ease-in-out;
   }
   
+  /* other containers for links in nav bar grid */
   .ahome { grid-area: ahome; }
   
   .features { grid-area: features; }
   
   .apricing { grid-area: apricing; }
   
-  .ahow { 
-    grid-area: ahow;
-  }
+  .ahow {  grid-area: ahow; }
   
   .asupport { grid-area: asupport; }
   
   .asign { grid-area: asign; }
 
+  /* sign up button in nav bar */
   #sign-up-navbar-button {
     padding: .4vw 1.2vw;;
     border-radius: .5vw;
     font-weight: 500;
   }
 
+  /* sign up button in nav bar animates when active */
   #sign-up-navbar-button:active {
     padding: .6vw 1.4vw;
     transition: .2s ease-in-out;
@@ -136,29 +136,34 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .atry { grid-area: atry; }
 
+  /* white buttons class */
   .white-button {
     background-color:white;
     color:rgb(27, 87, 244);
     border: .5px solid rgb(27, 87, 244);
   }
 
+  /* white buttons upon hover  */
   .white-button:hover {
     background-color:rgb(27, 87, 244);
     color:white;
     transition: .17s ease-in-out;
   }
 
+  /* blue buttons class */
   .blue-button {
     background-color:rgb(27, 87, 244);
     color:white;
   }
 
+  /* blue buttons upon hover */
   .blue-button:hover {
     background-color: white;
     border: .2px solid rgb(27, 87, 244);
     color: rgb(27, 87, 244);
   }
 
+  /* Try It Free button */
   #try-it-button {
     font-weight: 500;
     padding-left:3px;
@@ -169,11 +174,13 @@ body > #wrapper { height: auto; min-height: 100%; }
     border-radius: .5vw;
   }
 
+  /* Try It Free button when active */
   #try-it-button:active {
     padding: 6px 3x;
     transition: .2s ease-in-out;
   }
 
+  /* Try It Free button when hovered over */
   #try-it-button:hover {
     background-color: white;
     border: .2px solid rgb(0, 33, 242);
@@ -181,6 +188,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     transition: .17s ease-in-out;
   }
   
+  /* b section - heading */
   .b {  
     width:100%;
     height:50%;
@@ -197,6 +205,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   }
   
+  /* left side of b heading - container */
   .b1 {  
     width:100%;
     height:43%;
@@ -218,10 +227,8 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-area: b1;
   }
   
-  .b1focus { 
-    grid-area: b1focus;
-    padding:0;
-  }
+  /* */
+  .b1focus {   grid-area: b1focus; }
 
   /* focus text */
   .b1focus h1 {
@@ -232,17 +239,16 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding-top:6vw;
   }
   
-  .b1let { 
-    grid-area: b1let;
-    width:100%; 
-  }
+  .b1let {    grid-area: b1let; }
 
+  /* text in Let Us Handle ... */
   .b1let h4 {
     font-size:2.8vw;
     font-weight:500;
     padding-top:0;
   }
 
+  /* Subscription text */
   .b1subs {
     width:100%;
     grid-area: b1subs;
@@ -256,6 +262,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     margin-bottom:0;
   }
   
+  /* container for buttons in b1 */
   .b1a {  
     width:47vw;
     align-self:flex-start;
@@ -274,6 +281,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .b1asign { grid-area: b1asign; }
 
+  /* buttons in b1 */
   .b1a button {
     width:100%;
     font-size:1.4vw;
@@ -284,51 +292,59 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .b1achat { grid-area: b1achat; }
 
+  /* sign up free button */
   #sign-up-free-btn {
     padding-left: 8px;
-    padding-right:0px;
+    padding-right: 0px;
   }
 
+  /* text in Sign Up Free button */
   #sign-up-free-btn span {
     font-size:1.4vw;
     padding-right: 2vw;
   }
 
+  /* icon */
   #sign-up-free-btn i {
     padding-right:4px;
   }
 
+  /* chat with us button, b section */
   #chat-button {
     width:100%;
   }
 
+  /* icon in Chat With Us button */
   #chat-button i {
     padding-right:.5vw;
   }
   
   .b1b { grid-area: b1b;}
   
+  /* Already text container */
   .b1already { 
     grid-area: b1already;
     width:100%;
     height:2vw;
   }
 
+  /* Already text */
   .b1already h3 {
     font-size:1.5vw;
     color:rgb(91, 90, 90);
     font-weight:500;
   }
 
+  /* Already links */
   .b1already a {
     text-decoration: none;
     color:rgb(91, 90, 90);
   }
 
+  /* Container for Free Day Trial bulleted list, b1*/
   .b1bulletedlist {
-    /* Fix the sizing */
     width:100%;
-    height: 3vw;
+    height: 100%;
 
     display: grid;
     grid-template-columns: 1.2fr .5fr 2fr .5fr 2fr 3fr;
@@ -344,10 +360,12 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-area:b1bulletedlist;
   }
 
+  /* item in bulleted list, b1*/
   .b1bulletitem {
     width:100%;
   }
 
+  /* free 14 day trial */
   .free-14-day-trial {
     grid-area: free-14-day-trial;
     width:100%;
@@ -357,12 +375,14 @@ body > #wrapper { height: auto; min-height: 100%; }
     
   }
 
+  /* blue bullet */
   .blue-bullet {
     grid-area: blue-bullet;
     clip-path: ellipse(115px 50px at 50% 40%);
     width:100%;
   }
 
+  /* blue bullet image */
   .blue-bullet-img {
     justify-self:center;
     margin-left:auto;
@@ -373,32 +393,35 @@ body > #wrapper { height: auto; min-height: 100%; }
     border-radius: 50%;
   }
 
+  /* Manage Customers */
   .manage-customers {
     grid-area: manage-customers;
     width:100%;
     justify-self:center;
   }
 
-  #blue-bullet-2 {
-    grid-area: blue-bullet-2;
-  }
+  #blue-bullet-2 {   grid-area: blue-bullet-2; }
 
+  /* Cancel anytime button */
   .cancel-anytime {
     grid-area: cancel-anytime;
     width:100%;
     justify-self: center;
   }
 
+  /* bullet item image */
   .b1bulletitem img {
     height:1.3vw;
   }
   
+  /* right side of B section */
   .b2 {  
     grid-area: b2;
     justify-self:center;
     align-self:flex-start;
   }
 
+  /* image in right side of B section */
   .b2 img {
     height:100%;
     width:100%;
@@ -406,7 +429,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding-top:3vw;
   }
   
-
+  /* C section - line divider */
   .c { 
     align-self:flex-start;
     justify-content:center;
@@ -416,11 +439,12 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding:0;
    }
 
+  /* center line divider*/
   .c hr {
     margin:auto;
   }
 
-  
+  /* D section - text header */
   .d {  
     display: grid;
     grid-template-columns: 1fr;
@@ -436,31 +460,36 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-self:center;
     justify-content:center;
 
-    height:100%; /*will change once layout is good for sizing*/
+    height:100%;
   }
   
+  /* Start text container */
   .dstart { grid-area: dstart;
     margin-left: 0px;
     text-align: center;
     font-weight: 400;
   }
 
+  /* Start text */
   .dstart h3 {
     font-size: 2vw;
     padding: 0 12vw;
   }
   
+  /* New text container */
   .danew { 
     grid-area: danew;
     margin-left: 0px;
     text-align: center;
   }
 
+    /* "New" text in D */
   .danew p {
     font-size: 1vw;
     line-height:1.2vw;
   }
   
+  /* E section: row of buttons */
   .e {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 1fr;
@@ -474,6 +503,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     margin:auto;
   }
 
+  /* button class for E section */
   .e button {
     display: inline-block;
       height:10vw;
@@ -483,19 +513,10 @@ body > #wrapper { height: auto; min-height: 100%; }
       border-radius: 1vw;
       font-weight: 100;
       font-size:1.3vw;
-   }
-
-  .e-image {
-    
   }
+  .epayments {     grid-area: epayments; }
   
-  .epayments { 
-    grid-area: epayments;
-    color: white;
-  }
-  #payment-button{
-  }
-
+   /* payment button image */
   #payment-button img {
     width:4.5vw;
     border-radius: 50%;
@@ -503,10 +524,13 @@ body > #wrapper { height: auto; min-height: 100%; }
     margin-bottom: .5vw;
   }
   
+  /* payment button text*/
   #payment-button span {
     margin-top:4vw;
+    text-align:center;
   }
 
+  /* Retain button image */
   #retain-button img {
     width:3vw;
     object-fit: cover;
@@ -514,27 +538,33 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding-top:1.5vw;
   }
 
+  /* Reporting button image */
   #reporting-button img {
     width: 4vw;
     padding-bottom:1.5vw;
     padding-top:vw;
   }
 
+  /* Convert button image */
   #convert-button img {
     width: 4.5vw;
     padding-bottom:1.5vw;
     padding-top:1vw;
   }
   
+  /* image for payment button */
   .epay{
     width:50%;
   }
+
+  /* second type of white button - in E section */
   .white-button2 {
     background-color:white;
     color:rgb(112, 112, 112);
     border: .5px solid rgb(112, 112, 112);
   }
 
+  /* second type of white button, hover - in E section */
   .white-button2:hover {
     background-color:rgb(21, 87, 214);
     color:white;
@@ -542,17 +572,20 @@ body > #wrapper { height: auto; min-height: 100%; }
     transition: .17s ease-in-out;
   }
 
+  /* image grows on hover */
   .white-button2:hover img {
     width:150%;
     transition: .17s ease-in-out;
   }
 
+  /* second type of blue button - in E section */
   .blue-button2 {
     background-color:rgb(24, 87, 244);
     color:rgb(255, 255, 255);
     border: .2px solid rgb(112, 112, 112);
   }
 
+  /* second type of blue button, hover - in E section */
   .blue-button2:hover{
     background-color:rgb(255, 255, 255);
     border: .2px solid rgb(112, 112, 112);
@@ -560,6 +593,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     transition: .17s ease-in-out;
   }
 
+  /* image grows on hover */
   .blue-button2:hover img{
     border: 1px solid rgb(112, 112, 112);
     transition: .17s ease-in-out;
@@ -571,6 +605,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .econvert { grid-area: econvert;}
   
+  /* f section: image with blue on right */
   .f {  
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -580,30 +615,25 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-template-areas:
       "f1 f2";
     grid-area: f;
-    height: 100%; /* should be 100*/
+    height: 100%;
     width:80%;
     justify-self:center;
-
     justify-content:center;
-    /*curved border*/
-    /*border-radius:75px;
-    border:1px solid black;
-    outline: 1px solid rgb(105, 42, 42);
-    outline-offset: -4px;*/
   }
   
+  /* left column of F section */
   .f1 { 
     grid-area: f1;
-    height:57%; /* get this smaller, should be 100% when container is rihgt size */
+    height:57%;
 
     border-radius: 2vw 0px 0px 2vw;
     border:.5px solid rgb(113, 113, 113);
     margin-right:0;
 }
 
+  /* image in f section */
   .f1 img {
     margin: auto;
-    /* center image */
     height:24vw;
     position:relative;
     top: 50%;
@@ -611,6 +641,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     transform: translate(-50%, -50%);
   }
 
+  /* F section, righthand side*/
   .f2 {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 0.7fr .7fr 1.4fr;
@@ -626,21 +657,22 @@ body > #wrapper { height: auto; min-height: 100%; }
     background-color:rgb(21, 87, 244);
     color: white;
     
-    height:57%; /* get this to 100% */
+    height:57%;
     width:100%;
-    
+    /* round just the edges of the shape*/
     border-radius: 0px 2vw 2vw 0px;
     border:.5px solid rgb(113, 113, 113);
     margin-right:0;
   }
   
+  /* Start text container */
   .f2start { 
     grid-area: f2start;
     margin-top: 6.5vw;
     margin-bottom: 2.5vw;
   }
 
-  
+  /* Start text */
   .f2start h2{
     font-size: 1.9vw;
     font-weight: 500;
@@ -649,6 +681,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .f2deliver { grid-area: f2deliver; }
 
+  /* Deliver text */
   .f2deliver h5{
     font-size: 1.2vw;
     margin-bottom: 0vw;
@@ -656,11 +689,9 @@ body > #wrapper { height: auto; min-height: 100%; }
     font-weight:500;
   }
   
+  .f2accept {     grid-area: f2accept; }
   
-  .f2accept { 
-    grid-area: f2accept;
-    align-self:center;
-  }
+  /* bulleted unordered list in Accept section */
   .f2accept ul {
     margin:0;
     padding-left:.5vw;
@@ -668,6 +699,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-self: flex-start;
   }
 
+  /* list item in Accept */
   .f2accept li{
     list-style-type: "- ";
     font-size: 0.8vw;
@@ -676,11 +708,9 @@ body > #wrapper { height: auto; min-height: 100%; }
     margin:0;
   }
   
-  .f2learn { 
-    grid-area: f2learn;
-    
- }
+  .f2learn {   grid-area: f2learn; }
 
+  /* Learn More button  */
  .f2learn button {
     font-weight: 200;
     padding:0;
@@ -694,34 +724,31 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-items:center;
  }
 
+ /* Learn More, on hover */
 .btn2:hover {
   background-color:rgb(111, 184, 230);
   color:rgb(252, 252, 252);
   transition: .17s ease-in-out;
 }
 
+/* text on learn more button */
  #learn-more-text {
   padding-left:2vw;
   padding-right:3vw;
   font-size: 1.2vw;
-
  }
  
-
+/* icon on learn more */
  #f2learnmore i {
   padding-left:20;
   padding-right:0;
   font-size: 1.5vw;
 }
 
-  
+/* G section - Solutions heading */
   .gsolutions { 
     grid-area: gsolutions;
     font-size: 1.8vw;
-
-    /*align-self:center;
-    justify-self:center;
-    justify-content:center;*/
 
     align-self: flex-start;
     text-align:center;
@@ -733,9 +760,9 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding-bottom:0;
  }
 
-  
+  /* H section: 2x2 image grid*/
   .h {  display: grid;
-    grid-template-columns:26.67% 46.67% 26.67%; /*0.8fr 1.4fr 0.8fr;*/
+    grid-template-columns:26.67% 46.67% 26.67%;
     grid-template-columns: 5fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -744,24 +771,11 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1";
     grid-area: h;
     width:80%; /* for margins*/
-
-    
     justify-self:center;
-    /* 
-    display: grid;
-    grid-template-columns:26.67% 46.67% 26.67%;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". h1 .";
-    grid-area: h;
-    width:100%;
-    */
 
   }
 
+  /* buttons in H section*/
   .btn1{
       background-color:white;
       color:rgb(12, 14, 27);
@@ -770,37 +784,38 @@ body > #wrapper { height: auto; min-height: 100%; }
       border-radius: .3vw;
       
   }
-  
-    .btn1:hover {
+
+  /* H section buttons, upon hover */
+  .btn1:hover {
       background-color:rgb(13, 15, 19);
       color:rgb(252, 252, 252);
       transition: .17s ease-in-out;
-    }
+  }
   
+  /* grid inside H section*/
   .h1 {  
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0px 10vw; /* */ /* change for more horiz space between items */
+    gap: 0px 10vw; /* change for more horiz space between items */
     grid-auto-flow: row;
     grid-template-areas:
       "h1a h1b"
       "h1c h1d";
     grid-area: h1;
-   /* margin-top: 50px;*/
     width: 100%;
-    
-
+  
     justify-self:center;
-
     align-items:flex-start;
   }
 
+  /* items inside h1 section*/
   .h1 div {
     justify-items: center;
     
   }
   
+  /* top left part of H grid */
   .h1a {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.6fr 0.3fr 1fr;
@@ -815,9 +830,9 @@ body > #wrapper { height: auto; min-height: 100%; }
 
     height:50%;
     width:100%;
-
   }
 
+  /* all images container in H section*/
   .h1-logo {
     justify-content: center;
     align-items: center;
@@ -825,42 +840,38 @@ body > #wrapper { height: auto; min-height: 100%; }
     width: 10vw;
   }
 
+  /* image in H section */
   .h1-logo img{
     width:100%;
     margin-bottom: 0;
     padding-bottom: 0;
   }
   
-  .h1alogo { grid-area: h1alogo;
-  }
+  .h1alogo { grid-area: h1alogo; }
 
-  .h1-heading h4 { /* why doesnt this change any besides*/
+  /* H1 Heading text*/
+  .h1-heading h4 { 
     margin-top: 1vw;
     font-weight: 800;
     font-size:2vw;
   }
 
   .h1email { grid-area: h1email;}
-
-  .h1email h4{
-  }
   
   .h1aautomate { grid-area: h1aautomate; }
 
-  .h1-automate {
-    width:100%;
-  }
+  .h1-automate {  width:100%; }
+  
+  /* text for automate section */
   .h1-automate h6{
-    font-size:15%;
+    font-size:1vw;
     padding-left:6vw;
     padding-right:6vw;
   }
 
-  .h1alearn { 
-    grid-area: h1alearn;
-  }
+  .h1alearn {   grid-area: h1alearn; }
 
-
+  /* Learn more button in H section*/
   .h1learn-btn {
     margin-top:-2.6vw;
     width:12vw; 
@@ -870,6 +881,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     align-self:flex-start;
   }
 
+  /* Learn More Button itself */
   .h1learn-btn button {
     width:100%;
     height: 100%;
@@ -878,8 +890,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding:0;
   }
   
-
-  
+  /* top right part of H section grid*/
   .h1b {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.8fr 0.6fr 0.7fr 1.1fr;
@@ -896,27 +907,15 @@ body > #wrapper { height: auto; min-height: 100%; }
     width:100%;
   }
   
-  .h1blogo { 
-    grid-area: h1blogo;
-  }
-
-  .h1blogo img{
-  }
-
+  .h1blogo {   grid-area: h1blogo; }
   
   .h1btask { grid-area: h1btask;}
 
-  .h1btask h4{
-  }
-  
   .h1bautomate { grid-area: h1bautomate; }
   
   .h1blearn { grid-area: h1blearn;  }
-
-  .h1blearn button{
-    
-  }
   
+  /* bottom left part of H section grid */
   .h1c {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.8fr 0.6fr 0.7fr 1.1fr;
@@ -935,19 +934,13 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .h1clogo { grid-area: h1clogo; }
 
-  .h1clogo img{
-  }
-
   .h1canalytics { grid-area: h1canalytics; }
-
-  .h1canalytics h4{
-
-  }
   
   .h1cutomate { grid-area: h1cutomate; }
   
   .h1clearn { grid-area: h1clearn; }
   
+  /* bottom right part of H grid */
   .h1d {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.8fr 0.6fr 0.7fr 1.1fr;
@@ -966,27 +959,24 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .h1dlogo { grid-area: h1dlogo; }
 
-  .h1dlogo img{
-  }
-  
   .h1dproject { grid-area: h1dproject; }
-
-  .h1dproject h4{
-  }
   
   .h1dtomate { grid-area: h1dtomate; }
   
   .h1dlearn { grid-area: h1dlearn; }
 
+  /* icon in buttons for H section*/
   .btn1 i {
     font-size: 1vw;
     padding-left:3vw;
   }
 
+  /* text for Learn More button in H section*/
   .btn1 b {
     padding-left:2vw;
   }
   
+  /* footer section container */
   .i {  display: grid;
     grid-template-columns: .4fr 1fr .4fr;
     grid-template-rows: 1fr;
@@ -996,11 +986,11 @@ body > #wrapper { height: auto; min-height: 100%; }
       ". i1 .";
     grid-area: i;
     background-color: rgb(21, 87, 244);
-    /*height:400px; /* 100% */
 
     width:100%;
   }
   
+  /* i section in grid */
   .i1 {  
     display: grid;
     grid-template-columns: 1fr;
@@ -1018,8 +1008,8 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .i1try { grid-area: i1try;}
 
+  /* Try Double Tap text */
   .i1try h1{
-    /*margin-top: 20%;*/
     margin-top: 5%;
     text-align:center;
     color:white;
@@ -1027,11 +1017,13 @@ body > #wrapper { height: auto; min-height: 100%; }
     margin-bottom:0;
   }
   
+  /* let's get started container */
   .i1lets {
     grid-area: i1lets; 
     margin-top: 2%;
   }
 
+  /* Let's Get Started text */
   .i1lets h4{
     color:white;
     font-size:1.4vw;
@@ -1039,6 +1031,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     margin-top:0;
   }
   
+  /* buttons container in i section*/
   .i1a {  
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1052,28 +1045,49 @@ body > #wrapper { height: auto; min-height: 100%; }
     align-items: flex-start;;
     justify-content:center;
     justify-self:center;
-
-
-    /*
-    display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". i1aget i1achat .";
-    grid-area: i1a;
-    width:100%;
-    align-items: flex-start;;
-    justify-content:center;
-    */
   }
-  
+
+  /* Get started button container */
+  .i1aget { 
+    grid-area: i1aget; 
+    justify-content:center;
+
+  }
+
+  /*Get started Button*/
+  .end-btn {
+    background-color: rgb(129, 207, 59);
+    border: none;
+    width: 15vw;
+    height: 3.5vw;
+    color: #FFFFFF;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content:center; /* need to center button */
+    padding:0;
+    font-size:1.4vw;
+  }
+
+
+  /* text in get started button */
+  .end-btn span {
+    padding-right: 2vw;
+  }
+
+  /* icon in get started button */
+  .end-btn i {
+    padding-left:1.2vw;
+  }
+
+
+  /* chat button container */
   .i1achat { grid-area: i1achat; 
     justify-content: flex-end;
     justify-self: flex-end;
   }
 
+  /* chat button in i section*/
   #chat-button-bottom {
     font-size: 1vw;
     font-weight:600;
@@ -1082,35 +1096,19 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding:0;
   }
 
+  /* chat button icon*/
   #chat-button-bottom i {
     padding-right:1vw;
     font-size:2vw;
   }
 
+  /* chat button on hover */
   #chat-button-bottom:hover {
     border: .5px solid white;
   }
 
-  .i1aget { 
-    grid-area: i1aget; 
-    justify-content:center;
-
-  }
-
-  .i1aget button {
-    padding:0;
-    font-size:1.4vw;
-    height: 3.5vw;
-  }
-  
-  .i1free { grid-area: i1free;}
-
-  .i1free h6{
-    color:white;
-  }
-
+  /* Bulleted list in i section */
   .i1free { grid-area: i1free;
-    /* Fix the sizing */
     width:50%;
     justify-self:center;
     align-self:flex-start;
@@ -1130,21 +1128,19 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-area:i1free;
   }
 
+  /* item in bulleted list for i section */
   .i1freeitem {
     width:100%;
   }
 
-  .i1freeitem free-14-day-trial {
-    /* get these to work */
-    background-color:orange;
-  }
-
+  /* white colored bullet shape between items */
   .white-bullet {
     grid-area: white-bullet;
     clip-path: ellipse(115px 50px at 50% 40%);
     width:100%;
   }
 
+  /* image for white bullet */
   .white-bullet-img {
     justify-self:center;
     margin-left:auto;
@@ -1155,33 +1151,10 @@ body > #wrapper { height: auto; min-height: 100%; }
     border-radius: 50%;
   }
 
-  #white-bullet-2 {
-    grid-area: white-bullet-2;
-  }
+  #white-bullet-2 {  grid-area: white-bullet-2; }
 
+  /* Free 14 day trial i section*/
   .i1freeitem img {
     height:1.3vw;
     width: 100%;
-  }
-
-  /*Get started Button*/
-  .end-btn {
-    background-color: rgb(129, 207, 59);
-    border: none;
-    width: 15vw;
-    height: 2.5vw;
-    font-size: 1vw;
-    color: #FFFFFF;
-    border-radius: 0.5vw;
-    font-weight: bold;
-    cursor: pointer;
-    justify-content:center; /* need to center button */
-  }
-
-  .end-btn span {
-    padding-right: 2vw;
-  }
-
-  .end-btn i {
-    padding-left:1.2vw;
   }
