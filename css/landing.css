@@ -11,6 +11,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
 .container-fluid {  
     width: 100vw;
+    height:224.7vw;
     padding-left:0px;
     padding-right:0px;
     padding-bottom:0px;
@@ -26,7 +27,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-template-columns: 1fr;
     /*grid-template-rows:0.26fr 1.7fr 0.3fr 0.3fr 1fr 700px 100px 2.3fr 1.1fr; /* change values to px? */
     /*grid-template-rows: 0.26fr 2.5fr 0.34fr 0.73fr 0.68fr 2.59fr 0.43fr 2.45fr 1.38fr;*/
-    grid-template-rows: 2% 22% 3% 6.5% 6% 23% 4% 21.5% 12%;
+    grid-template-rows: 2% 22.5% 1% 5% 8% 22% 3% 24.5% 12%;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -41,11 +42,11 @@ body > #wrapper { height: auto; min-height: 100%; }
       "gsolutions"
       "h"
       "i";
+      
   }
   
   .a {  
 
-    background-color:red; 
     width:100%;
     justify-self:center;
 
@@ -93,6 +94,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     font-size: 1vw;
     font-weight: 600;
     text-align:center;
+    
   }
   
   .alogo { grid-area: alogo; }
@@ -123,7 +125,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   #sign-up-navbar-button {
     padding: .4vw 1.2vw;;
-    border-radius: 8px;
+    border-radius: .5vw;
     font-weight: 500;
   }
 
@@ -164,7 +166,7 @@ body > #wrapper { height: auto; min-height: 100%; }
     padding-top:2px;
     padding-bottom:1px;
     padding: .4vw .7vw;
-    border-radius: 8px;
+    border-radius: .5vw;
   }
 
   #try-it-button:active {
@@ -193,7 +195,6 @@ body > #wrapper { height: auto; min-height: 100%; }
       ". b1 b2 .";
     grid-area: b;
 
-    background-color:green;
   }
   
   .b1 {  
@@ -366,8 +367,8 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-self:center;
     margin-left:auto;
     margin-right:auto;
-    height:8px;
-    width: 6px;
+    height:.7vw;
+    width: .6vw;
     background-color:rgb(21, 87, 244);
     border-radius: 50%;
   }
@@ -431,12 +432,11 @@ body > #wrapper { height: auto; min-height: 100%; }
       "danew";
     grid-area: d;
     margin:0;
-    background-color:blueviolet;
     text-align:center;
     justify-self:center;
     justify-content:center;
 
-    height:50%; /*will change once layout is good for sizing*/
+    height:100%; /*will change once layout is good for sizing*/
   }
   
   .dstart { grid-area: dstart;
@@ -471,7 +471,6 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-area: e;
     justify-content: center;
     justify-self:center;
-    background-color:green;
     margin:auto;
   }
 
@@ -586,36 +585,18 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-self:center;
 
     justify-content:center;
-    background-color:fuchsia
     /*curved border*/
     /*border-radius:75px;
     border:1px solid black;
     outline: 1px solid rgb(105, 42, 42);
     outline-offset: -4px;*/
   }
-
-  /* learnmore button*/
-  .btn2{
-    background-color:rgb(13, 81, 239);
-    color:rgb(246, 247, 255);
-    border: 1px solid rgb(255, 255, 255);
-    width:3vw;
-    height: 4vw;
-    border-radius: 1vw;
-    
-}
-
-  .btn2:hover {
-    background-color:rgb(111, 184, 230);
-    color:rgb(252, 252, 252);
-    transition: .17s ease-in-out;
-  }
   
   .f1 { 
     grid-area: f1;
-    height:40%; /* get this smaller, should be 100% when container is rihgt size */
+    height:57%; /* get this smaller, should be 100% when container is rihgt size */
 
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 2vw 0px 0px 2vw;
     border:.5px solid rgb(113, 113, 113);
     margin-right:0;
 }
@@ -641,22 +622,22 @@ body > #wrapper { height: auto; min-height: 100%; }
       "f2accept"
       "f2learn";
     grid-area: f2;
-    padding:4vw;
+    padding:0 4vw;
     background-color:rgb(21, 87, 244);
     color: white;
     
-    height:40%; /* get this to 100% */
+    height:57%; /* get this to 100% */
     width:100%;
     
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 2vw 2vw 0px;
     border:.5px solid rgb(113, 113, 113);
     margin-right:0;
   }
   
   .f2start { 
     grid-area: f2start;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 6.5vw;
+    margin-bottom: 2.5vw;
   }
 
   
@@ -670,7 +651,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .f2deliver h5{
     font-size: 1.2vw;
-    margin-bottom: 3vw;
+    margin-bottom: 0vw;
     margin-top: -2vw;
     font-weight:500;
   }
@@ -678,40 +659,54 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .f2accept { 
     grid-area: f2accept;
-    background-color:red;
     align-self:center;
   }
   .f2accept ul {
+    margin:0;
     padding-left:.5vw;
+    line-height: 1vw;
+    justify-self: flex-start;
   }
 
   .f2accept li{
     list-style-type: "- ";
     font-size: 0.8vw;
     font-weight: 100;
+    line-height: 1vw;
     margin:0;
   }
   
   .f2learn { 
     grid-area: f2learn;
-    height: 14vw;
+    
  }
 
  .f2learn button {
     font-weight: 200;
     padding:0;
-    width:23vw;
+    background-color:rgb(13, 81, 239);
+    color:rgb(246, 247, 255);
+    border: 1px solid rgb(255, 255, 255);
+    width:19vw;
+    height: 3vw;
+    line-height:0vw;
+    border-radius: .7vw;
+    justify-items:center;
  }
+
+.btn2:hover {
+  background-color:rgb(111, 184, 230);
+  color:rgb(252, 252, 252);
+  transition: .17s ease-in-out;
+}
 
  #learn-more-text {
-    padding-left:2vw;
-    padding-right:3vw;
-    font-size: 1.5vw;
- }
+  padding-left:2vw;
+  padding-right:3vw;
+  font-size: 1.2vw;
 
- #f2learnmore {
-    text-align:center;
  }
+ 
 
  #f2learnmore i {
   padding-left:20;
@@ -722,7 +717,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .gsolutions { 
     grid-area: gsolutions;
-    font-size: 2.2vw;
+    font-size: 1.8vw;
 
     /*align-self:center;
     justify-self:center;
@@ -736,7 +731,6 @@ body > #wrapper { height: auto; min-height: 100%; }
 
     font-weight:600;
     padding-bottom:0;
-    background-color:blue;
  }
 
   
@@ -750,6 +744,7 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1";
     grid-area: h;
     width:80%; /* for margins*/
+    background-color:red;
     
     justify-self:center;
     /* 
@@ -782,11 +777,10 @@ body > #wrapper { height: auto; min-height: 100%; }
     }
   
   .h1 {  
-    background-color:purple;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1px 20vw; /* */ /* change for more horiz space between items */
+    gap: 0px 19vw; /* */ /* change for more horiz space between items */
     grid-auto-flow: row;
     grid-template-areas:
       "h1a h1b"
@@ -794,11 +788,13 @@ body > #wrapper { height: auto; min-height: 100%; }
     grid-area: h1;
    /* margin-top: 50px;*/
     width: 100%;
+    height:100%;
     
 
     justify-self:center;
 
     align-items:flex-start;
+    background-color:blue;
   }
 
   .h1 div {
@@ -808,7 +804,7 @@ body > #wrapper { height: auto; min-height: 100%; }
   
   .h1a {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.8fr 0.6fr 0.7fr 1.1fr;
+    grid-template-rows: 1fr 0.6fr 0.3fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -818,9 +814,9 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1alearn";
     grid-area: h1a;
 
-    height:100%;
+    background-color:yellow;
+    height:80%;
     width:100%;
-    background-color:red;
 
   }
 
@@ -860,23 +856,29 @@ body > #wrapper { height: auto; min-height: 100%; }
     font-size:15%;
     padding-left:6vw;
     padding-right:6vw;
+    background-color:bisque;
   }
 
   .h1alearn { grid-area: h1alearn; }
 
 
   .h1learn-btn {
-    width:40%; 
-    height:40%;
+    background-color:green;
+    width:12vw; 
+    height:2.5vw;
+    border-radius:1vw;
     justify-items:center;
+    align-self:flex-start;
+    padding-top:0;
   }
 
   .h1learn-btn button {
     margin: auto;
     width:100%;
-    height: 20%;
+    height: 100%;
     font-size: 15%;
     border: 0.2px solid black;
+    padding:0;
   }
   
 
@@ -893,7 +895,7 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1blearn";
     grid-area: h1b;
 
-    height:100%;
+    height:80%;
     width:100%;
   }
   
@@ -933,7 +935,7 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1clearn";
     grid-area: h1c;
 
-    height:100%;
+    height:80%;
     width:100%;
   }
   
@@ -964,7 +966,7 @@ body > #wrapper { height: auto; min-height: 100%; }
       "h1dlearn";
     grid-area: h1d;
 
-    height:100%;
+    height:80%;
     width:100%;
   }
   
@@ -1015,18 +1017,23 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .i1try h1{
     /*margin-top: 20%;*/
-    margin-top: 10%;
+    margin-top: 5%;
     text-align:center;
     color:white;
-    font-size: 3.5vw;
+    font-size: 3vw;
+    margin-bottom:0;
   }
   
-  .i1lets {grid-area: i1lets; margin-top: 5%;}
+  .i1lets {
+    grid-area: i1lets; 
+    margin-top: 2%;
+  }
 
   .i1lets h4{
     color:white;
     font-size:1.4vw;
     font-weight:600;
+    margin-top:0;
   }
   
   .i1a {  
@@ -1043,7 +1050,6 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-content:center;
     justify-self:center;
 
-    background-color:red;
 
     /*
     display: grid;
@@ -1063,18 +1069,19 @@ body > #wrapper { height: auto; min-height: 100%; }
   .i1achat { grid-area: i1achat; 
     justify-content: flex-end;
     justify-self: flex-end;
-    
   }
 
   #chat-button-bottom {
     font-size: 1vw;
     font-weight:600;
     width: 15vw;
-    height: 2.5vw;
+    height: 3.5vw;
+    padding:0;
   }
 
   #chat-button-bottom i {
     padding-right:1vw;
+    font-size:2vw;
   }
 
   #chat-button-bottom:hover {
@@ -1084,8 +1091,14 @@ body > #wrapper { height: auto; min-height: 100%; }
   .i1aget { 
     grid-area: i1aget; 
     justify-content:center;
+
   }
 
+  .i1aget button {
+    padding:0;
+    font-size:1.4vw;
+    height: 3.5vw;
+  }
   
   .i1free { grid-area: i1free;}
 
@@ -1133,8 +1146,8 @@ body > #wrapper { height: auto; min-height: 100%; }
     justify-self:center;
     margin-left:auto;
     margin-right:auto;
-    height:8px;
-    width: 6px;
+    height:.5vw;
+    width: .5vw;
     background-color:rgb(255, 255, 255);
     border-radius: 50%;
   }
@@ -1145,6 +1158,7 @@ body > #wrapper { height: auto; min-height: 100%; }
 
   .i1freeitem img {
     height:1.3vw;
+    width: 100%;
   }
 
   /*Get started Button*/
