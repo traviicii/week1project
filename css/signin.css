@@ -283,10 +283,6 @@ body {
         display: none;
     }
 
-    .signup_button2 {
-
-    }
-
     .signin-image-container {
         display: none;
     }
@@ -344,40 +340,14 @@ body {
     }
 
     .signin-bottom-text {
-
+        padding-top: 2vw;
         padding-right: 0px;
         white-space: nowrap; 
       }
 
-    #signup_button:active {
-    padding-left: 51.5px;
-    padding-right: 51.5px;
-    padding-top: 11.5px;
-    padding-bottom: 11.5px;
-    transition: .2s ease-in-out; 
+ 
 }
 
-#signup_button:hover {
-    background-color: white;
-    color: rgb(34,79,239);
-    transition: .17s ease-in-out;
-}
-
-#signup_button:active {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: .2s ease-in-out; 
-}
-
-#signup_button:hover {
-    background-color: white;
-    color: rgb(34,79,239);
-    transition: .17s ease-in-out;
-}
-
-}
 
 @media (max-width: 390px) {
     .social-media-container a {
