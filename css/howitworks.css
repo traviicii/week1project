@@ -1,0 +1,924 @@
+/* body */
+body {
+    font-family: "Helvetica", sans-serif; 
+  }
+  html, body { 
+    height: 100%;
+    width:100%;
+  }
+  
+  body > #wrapper { height: auto; min-height: 100%; }
+  
+  .container-fluid {  
+      width: 100vw;
+      padding-left:0px;
+      padding-right:0px;
+      padding-bottom:0px;
+  
+      overflow:hidden;
+      height:280vw;
+      
+      
+      justify-self:center;
+      justify-content:center;
+  
+      display: grid;
+      
+      grid-template-columns: 1fr;
+      /*grid-template-rows:0.26fr 1.7fr 0.3fr 0.3fr 1fr 700px 100px 2.3fr 1.1fr; /* change values to px? */
+      /*grid-template-rows: 0.26fr 2.5fr 0.34fr 0.73fr 0.68fr 2.59fr 0.43fr 2.45fr 1.38fr;*/
+      grid-template-rows: 2% 22% 3% 3.5% 9% 22.25% 4% 22.25% 12%;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "gsolutions"
+        "h"
+        "i";
+    }
+    
+    .a {  
+  
+      background-color:white; 
+      width:100%;
+      justify-self:center;
+  
+      display: grid;
+      /*grid-template-columns: .8fr 1.9fr 1.2fr 1.4fr 1fr 1.6fr 1.1fr 1fr 1fr 1.2fr .9fr;*/
+      /*grid-template-columns: auto 14.5% 9% 10.5% 7.5% 12% 8% 8% 8% 9% auto;*/
+      grid-template-columns: minmax(0, 1fr) 14.5% 9% 10.5% 7.5% 12% 8% 8% 8% 9% minmax(0, 1fr);
+  
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". alogo ahome features apricing ahow asupport . asign atry .";
+      grid-area: a;
+  
+      height: 5vw;
+      margin-top:.5vw;
+      
+    }
+  
+    /* All link containers in navbar*/
+    .a div {
+      align-self:center;
+      justify-self:center;
+    }
+  
+    /* Links in navbar */
+    .a a {
+      text-decoration: none; /* no underline in links */
+      font-size:1vw;
+    }
+  
+    .a a:visited {
+      color:rgb(128, 128, 128);
+    }
+  
+    .a a:hover {
+      font-size:1.1vw;
+      color:rgb(0, 33, 242);
+      transition: .2s ease-in-out;
+      font-weight:bold;
+    }
+  
+    .a button {
+      font-size: 1vw;
+      font-weight: 600;
+      text-align:center;
+    }
+    
+    .alogo { grid-area: alogo; }
+  
+    #logo-img {
+      height:75%;
+      width:75%;
+    }
+  
+    .alogo:hover {
+      width:105%;
+      transition: .2s ease-in-out;
+    }
+    
+    .ahome { grid-area: ahome; }
+    
+    .features { grid-area: features; }
+    
+    .apricing { grid-area: apricing; }
+    
+    .ahow { 
+      grid-area: ahow;
+    }
+    
+    .asupport { grid-area: asupport; }
+    
+    .asign { grid-area: asign; }
+  
+    #sign-up-navbar-button {
+      padding: .4vw 1.2vw;;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+  
+    #sign-up-navbar-button:active {
+      padding: .6vw 1.4vw;
+      transition: .2s ease-in-out;
+      }
+    
+    .atry { grid-area: atry; }
+  
+    .white-button {
+      background-color:white;
+      color:rgb(27, 87, 244);
+      border: .5px solid rgb(27, 87, 244);
+    }
+  
+    .white-button:hover {
+      background-color:rgb(27, 87, 244);
+      color:white;
+      transition: .17s ease-in-out;
+    }
+  
+    .blue-button {
+      background-color:rgb(27, 87, 244);
+      color:white;
+    }
+  
+    .blue-button:hover {
+      background-color: white;
+      border: .2px solid rgb(27, 87, 244);
+      color: rgb(27, 87, 244);
+    }
+  
+    #try-it-button {
+      font-weight: 500;
+      padding-left:3px;
+      padding-right:3px;
+      padding-top:2px;
+      padding-bottom:1px;
+      padding: .4vw .7vw;
+      border-radius: 8px;
+    }
+  
+    #try-it-button:active {
+      padding: 6px 3x;
+      transition: .2s ease-in-out;
+    }
+  
+    #try-it-button:hover {
+      background-color: white;
+      border: .2px solid rgb(0, 33, 242);
+      color: rgb(34,79,239);
+      transition: .17s ease-in-out;
+    }
+    
+    .b {  
+      width:100%;
+      height:50%;
+      justify-content:center; /* for dynamic sizing */
+      align-items:flex-start;
+      display: grid;
+      grid-template-columns: 0.9fr 3.7fr 3fr 0.2fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". b1 b2 .";
+      grid-area: b;
+  
+      background-color:white;
+    }
+    
+    .b1 {  
+      width:100%;
+      height:43%;
+      justify-content:flex-start;
+      align-items:flex-start;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr .5fr 1fr 1fr 1fr;
+      /*grid-template-rows: 0.5fr 0.4fr 0.4fr 0.9fr 0.4fr 0.4fr;*/
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "b1focus"
+        "b1let"
+        "b1subs"
+        "b1a"
+        "b1already"
+        "b1bulletedlist";
+      grid-area: b1;
+    }
+    
+    .b1focus { 
+      grid-area: b1focus;
+      padding:0;
+    }
+  
+    /* focus text */
+    .b1focus h1 {
+      font-size:4.4vw;
+      font-weight: 600;
+      letter-spacing:-.5px;
+      line-height: 5.7vw;
+      padding-top:6vw;
+    }
+    
+    .b1let { 
+      grid-area: b1let;
+      width:100%; 
+    }
+  
+    .b1let h4 {
+      font-size:2.8vw;
+      font-weight:500;
+      padding-top:0;
+    }
+  
+    .b1subs {
+      width:100%;
+      grid-area: b1subs;
+      font-size:1vw;
+      padding-right:3vw;
+      padding-bottom:0px;
+      height:70%;
+      font-weight: 700;
+      font-size:1.4vw;
+      color:rgb(153, 153, 153);
+      margin-bottom:0;
+    }
+    
+    .b1a {  
+      width:47vw;
+      align-self:flex-start;
+      justify-self:center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "b1asign b1achat .";
+      grid-area: b1a;
+      justify-items: center;
+      margin-bottom:1.5vw;
+    }
+    
+    .b1asign { grid-area: b1asign; }
+  
+    .b1a button {
+      width:100%;
+      font-size:1.4vw;
+      font-weight:600;
+      padding-top:8%;
+      padding-bottom:8%;
+    }
+    
+    .b1achat { grid-area: b1achat; }
+  
+    #sign-up-free-btn {
+      padding-left: 8px;
+      padding-right:0px;
+    }
+  
+    #sign-up-free-btn span {
+      font-size:1.4vw;
+      padding-right: 2vw;
+    }
+  
+    #sign-up-free-btn i {
+      padding-right:4px;
+    }
+  
+    #chat-button {
+      width:100%;
+    }
+  
+    #chat-button i {
+      padding-right:.5vw;
+    }
+    
+    .b1b { grid-area: b1b;}
+    
+    .b1already { 
+      grid-area: b1already;
+      width:100%;
+      height:2vw;
+    }
+  
+    .b1already h3 {
+      font-size:1.5vw;
+      color:rgb(91, 90, 90);
+      font-weight:500;
+    }
+  
+    .b1already a {
+      text-decoration: none;
+      color:rgb(91, 90, 90);
+    }
+  
+    .b1bulletedlist {
+      /* Fix the sizing */
+      width:100%;
+      height: 3vw;
+  
+      display: grid;
+      grid-template-columns: 1.2fr .5fr 2fr .5fr 2fr 3fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "free-14-day-trial blue-bullet manage-customers blue-bullet-2 cancel-anytime .";
+      align-items:center;
+      justify-content:center;
+      padding:0;
+  
+      grid-area:b1bulletedlist;
+    }
+  
+    .b1bulletitem {
+      width:100%;
+    }
+  
+    .free-14-day-trial {
+      grid-area: free-14-day-trial;
+      width:100%;
+      padding-right:0;
+      align-self:center;
+      justify-self:center;
+      
+    }
+  
+    .blue-bullet {
+      grid-area: blue-bullet;
+      clip-path: ellipse(115px 50px at 50% 40%);
+      width:100%;
+    }
+  
+    .blue-bullet-img {
+      justify-self:center;
+      margin-left:auto;
+      margin-right:auto;
+      height:8px;
+      width: 6px;
+      background-color:rgb(21, 87, 244);
+      border-radius: 50%;
+    }
+  
+    .manage-customers {
+      grid-area: manage-customers;
+      width:100%;
+      justify-self:center;
+    }
+  
+    #blue-bullet-2 {
+      grid-area: blue-bullet-2;
+    }
+  
+    .cancel-anytime {
+      grid-area: cancel-anytime;
+      width:100%;
+      justify-self: center;
+    }
+  
+    .b1bulletitem img {
+      height:1.3vw;
+    }
+    
+    .b2 {  
+      grid-area: b2;
+      justify-self:center;
+      align-self:flex-start;
+    }
+  
+    .b2 img {
+      height:100%;
+      width:100%;
+      align-self:flex-start;
+      padding-top:3vw;
+    }
+    
+  
+    .c { 
+      align-self:flex-start;
+      justify-content:center;
+      height:1vw;
+      grid-area: c;
+      align-items: center;
+      padding:0;
+     }
+  
+    .c hr {
+      margin:auto;
+    }
+  
+    
+    .d {  
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "dstart";
+      grid-area: d;
+      margin:0;
+      background-color:white;
+      text-align:center;
+      justify-self:center;
+      justify-content:center;
+     
+  
+      height:%; /*will change once layout is good for sizing*/
+    }
+    .dstart h3{
+        font-size: 2vw;
+    }
+
+    .e {  display: grid;
+      grid-template-columns: ;
+      grid-template-rows: 1fr;
+      gap: 0px 4vw;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "loremipsum";
+      grid-area: e;
+      justify-content: center;
+      justify-self:center;
+      background-color:white;
+      margin:auto;
+    }
+  
+    /** may need to change font**/
+    .loremspsum  h3{
+        font-size: 2vw;
+        line-height:1.2vw;
+
+      }
+      
+
+    .f {  
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "f1 f2";
+      grid-area: f;
+      height: 140%; /* should be 100*/
+      width:80%;
+      justify-self:center;
+      margin-top: 10%;
+  
+      justify-content:center;
+      background-color:white;
+      /*curved border*/
+      /*border-radius:75px;
+      border:1px solid black;
+      outline: 1px solid rgb(105, 42, 42);
+      outline-offset: -4px;*/
+    }
+  
+    
+    .f1 { 
+      grid-area: f1;
+      padding:5px;
+      height:40%; /* get this smaller, should be 100% when container is rihgt size */
+  
+      border-radius: 30px 0px 0px 30px;
+      border:.5px solid rgb(113, 113, 113);
+      margin-right:0;
+  }
+  
+    .f1 img {
+      margin: auto;
+      /* center image */
+      height:24vw;
+      position:relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .f2 {  display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.5fr 2.8fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "f2start"
+        "f2deliver";
+      grid-area: f2;
+      padding:4vw;
+      background-color:rgb(21, 87, 244);
+      color: white;
+      
+      height:40%; /* get this to 100% */
+      width:100%;
+      
+      border-radius: 0px 30px 30px 0px;
+      border:.5px solid rgb(113, 113, 113);
+      margin-right:0;
+    }
+    
+    .f2start { 
+      grid-area: f2start;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      margin-left: 20%;
+    }
+  
+    
+    .f2start h2{
+      font-size: 1.8vw;
+      font-weight: 500;
+  
+    }
+    
+    .f2deliver { grid-area: f2deliver;
+    font-size: 2vw;
+    font-weight: 300; margin-top: 10%;;}
+  
+    .f2deliver h5{
+      font-size: 1.2vw;
+      margin-bottom: 3vw;
+      margin-top: -2vw;
+      font-weight:500;
+    }
+    
+    
+    .f2accept { 
+    }
+    .f2accept ul {
+    }
+  
+    .f2accept li{
+      list-style-type: "- ";
+      font-size: 0.8vw;
+      font-weight: 100;
+      margin:0;
+    }
+    
+    .f2learn { 
+      grid-area: f2learn;
+      height: 14vw;
+   }
+  
+   .f2learn button {
+      font-weight: 200;
+      padding:0;
+      width:23vw;
+   }
+  
+   #learn-more-text {
+      padding-left:2vw;
+      padding-right:3vw;
+      font-size: 1.5vw;
+   }
+  
+   #f2learnmore {
+      text-align:center;
+   }
+  
+   #f2learnmore i {
+    padding-left:20;
+    padding-right:0;
+    font-size: 1.5vw;
+  }
+  
+    
+    .gsolutions { 
+      grid-area: gsolutions;
+      font-size: 2.2vw;
+  
+      /*align-self:center;
+      justify-self:center;
+      justify-content:center;*/
+  
+      align-self: flex-start;
+      text-align:center;
+  
+      height:100%;
+      width:100%;
+  
+      font-weight:600;
+      padding-bottom:0;
+
+      top-margin:-40%;
+   }
+  
+    
+    /**.h {  display: grid;
+      grid-template-columns:26.67% 46.67% 26.67%; /*0.8fr 1.4fr 0.8fr;*/
+      /**grid-template-columns: 5fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "h1";
+      grid-area: h;
+      width:80%; /* for margins*/
+      
+      /*justify-self:center;
+      /* 
+      display: grid;
+      grid-template-columns:26.67% 46.67% 26.67%;
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". h1 .";
+      grid-area: h;
+      width:100%;
+      */
+  
+
+    .h {  
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "h1 h2";
+        grid-area: h;
+        height: 120%; /* should be 100*/
+        width:80%;
+        justify-self:center;
+        margin-left:10%;
+    
+        justify-content:center;
+        align-items: center;
+        align-content: center;
+        background-color:white;
+        /*curved border*/
+        /*border-radius:75px;
+        border:1px solid black;
+        outline: 1px solid rgb(105, 42, 42);
+        outline-offset: -4px;*/
+      }
+      
+      .h1 { 
+        grid-area: h1;
+        padding:5px;
+        height:50%; /* get this smaller, should be 100% when container is rihgt size */
+    
+        margin-right:0;
+    }
+    
+      .h1 img {
+        margin: auto;
+        /* center image */
+        height:24vw;
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+      .h2 {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 2.8fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "h2start"
+          "h2deliver";
+        grid-area: h2;
+        padding:4vw;
+        background-color:rgb(21, 87, 244);
+        color: white;
+        
+        height:50%; /* get this to 100% */
+        width:100%;
+        
+        border-radius: 0px 30px 30px 0px;
+        border:.5px solid rgb(113, 113, 113);
+        margin-right:0;
+      }
+      
+      .h2start { 
+        grid-area: h2start;
+        
+        margin-bottom: 40px;
+        margin-left: 20%;
+      }
+    
+      
+      .h2start h2{
+        font-size: 2.3vw;
+        font-weight: 500;
+    
+      }
+      
+      .h2deliver { grid-area: h2deliver;
+      font-size: 1.2vw;
+      font-weight: 400; }
+    
+      .h2deliver h5{
+        font-size: 1.2vw;
+        margin-bottom: 3vw;
+        margin-top: -2vw;
+        font-weight:500;
+      }
+      
+      
+    
+    
+    .i {  display: grid;
+      grid-template-columns: .4fr 1fr .4fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". i1 .";
+      grid-area: i;
+      background-color: rgb(21, 87, 244);
+      /*height:400px; /* 100% */
+  
+      width:100%;
+    }
+    
+    .i1 {  
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: .6fr .4fr .3fr .6fr 1fr; /* fix this */
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "i1try"
+        "i1lets"
+        "i1a"
+        "i1free"
+        ".";
+      grid-area: i1;
+    }
+    
+    .i1try { grid-area: i1try;}
+  
+    .i1try h1{
+      /*margin-top: 20%;*/
+      margin-top: 10%;
+      text-align:center;
+      color:white;
+      font-size: 3.5vw;
+    }
+    
+    .i1lets {grid-area: i1lets; margin-top: 5%;}
+  
+    .i1lets h4{
+      color:white;
+      font-size:1.4vw;
+      font-weight:600;
+    }
+    
+    .i1a {  
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "i1aget i1achat";
+      grid-area: i1a;
+      width:60%;
+      align-items: flex-start;;
+      justify-content:center;
+      justify-self:center;
+  
+    }
+  
+      /*
+      display: grid;
+      grid-template-columns: 20% 30% 30% 20%;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". i1aget i1achat .";
+      grid-area: i1a;
+      width:100%;
+      align-items: flex-start;;
+      justify-content:center;
+      */
+    }
+    
+    .i1achat { grid-area: i1achat; 
+      justify-content: flex-end;
+      justify-self: flex-end;
+      
+    }
+  
+    #chat-button-bottom {
+      font-size: 1vw;
+      font-weight:600;
+      width: 15vw;
+      height: 2.5vw;
+    }
+  
+    #chat-button-bottom i {
+      padding-right:1vw;
+    }
+  
+    #chat-button-bottom:hover {
+      border: .5px solid white;
+    }
+  
+    .i1aget { 
+      grid-area: i1aget; 
+      justify-content:center;
+    }
+  
+    
+    .i1free { grid-area: i1free;}
+  
+    .i1free h6{
+      color:white;
+    }
+  
+    .i1free { grid-area: i1free;
+      /* Fix the sizing */
+      width:50%;
+      justify-self:center;
+      align-self:flex-start;
+      height: 3vw;
+  
+      display: grid;
+      grid-template-columns: 1fr .5fr 2fr .5fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "free-14-day-trial white-bullet manage-customers white-bullet-2 cancel-anytime";
+      align-items:center;
+      justify-content:center;
+      padding:0;
+  
+      grid-area:i1free;
+    }
+  
+    .i1freeitem {
+      width:100%;
+    }
+  
+    .i1freeitem free-14-day-trial {
+      /* get these to work */
+      background-color:orange;
+    }
+  
+    .white-bullet {
+      grid-area: white-bullet;
+      clip-path: ellipse(115px 50px at 50% 40%);
+      width:100%;
+    }
+  
+    .white-bullet-img {
+      justify-self:center;
+      margin-left:auto;
+      margin-right:auto;
+      height:8px;
+      width: 6px;
+      background-color:rgb(255, 255, 255);
+      border-radius: 50%;
+    }
+  
+    #white-bullet-2 {
+      grid-area: white-bullet-2;
+    }
+  
+    .i1freeitem img {
+      height:1.3vw;
+    }
+  
+    /*Get started Button*/
+    .end-btn {
+      background-color: rgb(129, 207, 59);
+      border: none;
+      width: 15vw;
+      height: 2.5vw;
+      font-size: 1vw;
+      color: #FFFFFF;
+      border-radius: 0.5vw;
+      font-weight: bold;
+      cursor: pointer;
+      justify-content:center; /* need to center button */
+    }
+  
+    .end-btn span {
+      padding-right: 2vw;
+    }
+  
+    .end-btn i {
+      padding-left:1.2vw;
+    }
+  
